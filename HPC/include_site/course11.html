@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="../include/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../include/img/logo.png">
+	<title>NTU HPC</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+
+		body {
+			position: relative;
+            font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+		}
+		.jumbotron-fluid{
+			background-image: url("../include/img/banner.jpg");
+			background-position: center;
+            background-size: cover;
+			color: black;
+		}
+
+		.navbar{
+			background-color: rgba(0,0,0,0.9);
+		}
+		#navbar-example3 .nav-link{
+			color: gray;
+			font-size: 15px;
+		}
+		#navbar-example3 .active{
+			background-color: white!important;
+			color: #18bd97!important;
+		}
+		.title{
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: center
+        }
+        img{
+
+        }
+        .footer{
+            padding-top: 45px;
+            border-top: 1px solid #dfdfdf;
+            background-color: #fafafa;
+        }
+        .footer p{
+            margin: 0;
+            font-size: 15px;
+            color: #7f7f7f
+        }
+        .button,
+        .button::after {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .button {
+            background: none;
+            color: #2ecc71;
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 1em auto;
+            padding: 2em;
+            position: relative;
+        }
+        .button::before,
+        .button::after {
+            background: #2ecc71;
+            content: '';
+            position: absolute;
+            z-index: -1;
+        }
+        .button:hover {
+            color: #fff;
+        }
+        .btn_1::before {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn_1::after {
+            background: #fff;
+            color: black!important;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .btn_1:hover:after {
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+        }
+        .logo{
+            margin-top: 45px;
+            border-radius: 50%
+        }
+        .content{
+            margin-top: 25px;
+            margin-bottom: 40px;
+        }
+        .nav_item{
+            width: 15%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 30px;
+        }
+        .tab-pane{
+            padding-top: 30px
+        }
+	</style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="70">
+	<div id='Header'></div>
+	<script type="text/javascript" src="../include/js/navbar.js"></script>
+  <div class="jumbotron jumbotron-fluid" id="item-top">
+		<div class="container text-center">
+			<h1>2018 暑期高效能運算課程</h1>
+			<p class="lead">High Performance Computing and Big Data</p>
+		</div>
+	</div>
+
+     <div class="title">VASP 第一原理計算簡介</div><br><hr>
+    <div class="container">
+        <div class="row content" >
+                        <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/BasicInfo.gif">
+                            <h3>基本資訊</h3>
+                        </div>
+
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p>【日期】 2018/8/30(四)，8/31(五)</p>
+                            <p>【時間】  ■10:00~12:00  ■13:20~16:20</p>
+                            <p>【地點】  計中 212 教室（電腦教室）</p>
+                            <p>【費用】 臺灣大學及國立臺灣大學系統 1000 元，其他 2000 元</p>
+                            <p>【主辦單位】國立臺灣大學計算機及資訊網路中心（臺大計中）</p>
+                        </div>
+
+    </div><hr>
+            <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/professor.gif">
+                            <h3>師資</h3>
+                        </div>
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p><strong>國立臺灣大學 郭錦龍副教授</strong></p>
+                            <p>材料科學與工程學系 副教授</p><br>
+                            <h6>學歷：</h6>
+                            <ul>
+                                <li>美國康乃爾大學博士 (2005)</li>
+                            </ul>
+                                <h6>經歷:</h6>
+
+                            <ul>
+                                <li>國立台灣大學副教授(2013/08~迄今)</li>
+                                <li>國立台灣大學助理教授(2007/08~2013/07)</li>
+                                <li>美國德州大學奧斯汀分校博士後研究員(2005/01~2007/07)</li>
+                            </ul>
+                            <br>
+                                <h6>研究專長: </h6>
+                            <ul>
+                                <li>資計算材料科學與分子模擬</li>
+                            </ul>
+                            <a href="teacher08.html">詳細資料</a>
+                          </div>
+                    </div><hr>
+            <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/CourseIntro.gif">
+                            <h3>課程簡介</h3>
+                        </div>
+
+                        <div id="box" class="col-12 col-md-9" style="margin: auto;">
+                            <p>近年來隨著電腦科技的進步，材料的研發模式已逐漸從傳統藉由不斷地實驗試誤所累積的經驗準則，發展到利用理論計算與模擬來預測材料的微觀結構與其各項重要性質之間的關聯性，並將其應用於尖端材料的設計與開發研究上。第一原理密度泛函理論計算在目前這類型的研究中扮演著舉足輕重的角色。有別於傳統的半經驗計算方法，第一原理計算是一種只需給定原子的種類和位置而不需要代入任何的實驗或經驗參數，僅根據量子力學的物理定律便可直接計算出各種材料性質的方法。由於第一原理計算預測的準確性已獲得普遍的認可，這類型的計算方法目前已被廣泛應用於材料、物理、以及化學等相關領域的研究上。</p>
+
+                            <p>在眾多的第一原理計算軟體中，由維也納大學所開發的VASP (Vienna Ab Initio Simulation Package) 是一套功能齊全且具有理想的精確度及計算效能而被廣泛地使用的軟體。由於VASP計算中是將波函數以平面波的線性組合展開，並配合布洛赫定理(Bloch’s theorem)與週期性邊界條件，此套軟體特別適合用來進行材料塊材系統的性質預測。VASP軟體提供許多關於材料物理及化學性質計算的功能，如結構優化、電子態密度、能帶結構、磁性、熱力學和機械性質、介電函數、吸收光譜、以及擴散能障等。此短期課程將著重於讓學員藉由實際操作來熟悉 VASP計算中各種輸入檔參數的設定、執行計算的方式、以及其各項基本功能的應用。預期上完本課程之學員將能夠充分了解掌握VASP的基本操作方式，並學會如何從輸出結果進行各項材料基本性質的分析與預測。</p>
+
+
+
+         </div>
+      </div><hr>
+            <div class="row content">
+
+                       <div class="col-12 col-md-3" style="text-align: center">
+                           <img class="logo" src="../include/img/CourseContent.gif">
+                           <h3>課程內容</h3>
+                       </div>
+
+                       <div class="col-12 col-md-9" style="margin: auto;">
+                           <table class="table table-bordered table-condensed table-responsive-md">
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">第一天</th>
+                                        <th scope="col">第二天</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <ol>
+                                                <li>基本Linux系統指令介紹</li>
+                                                <li>VASP軟體使用簡介</li>
+                                                <li>晶體結構優化</li>
+                                                <li>電子結構計算: 態密度、能帶結構、decomposed charge density</li>
+                                            </ol>
+                                        </td>
+                                        <td>
+                                            <ol>
+                                                <li>表面結構計算: 表面能、功函數</li>
+                                                <li>光學性質計算: 介電函數、吸收光譜、反射光譜</li>
+                                                <li>機械性質計算: bulk modulus、shear modulus、Young’s modulus</li>
+                                                <li>分子動力學模擬</li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                               </tbody>
+                           </table>
+                       </div>
+         </div><hr>
+            <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/Participants.gif">
+                           <h3>對象</h3>
+                        </div>
+
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p>願意學習Linux基本指令操作及檔案編輯功能<br>
+                                願意學習基本的叢集系統操作能力<br>
+                                適合化學、物理、化工、材料等領域的研究人員參與，本課程著重操作使用，不涉及深度理論解說。</p>
+                       </div>
+                   </div><hr>
+            <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/remark.gif">
+                           <h3>備註</h3>
+                        </div>
+
+
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p>1.本課程不供餐，不提供上課證明或證書。</p>
+                            <p>2.如因報名人數過多，本中心得更換教室。請學員務必於上課前三日，上網確認上課地點。</p>
+                        </div>
+         </div><hr>
+        </div>
+
+	<div id='Footer'></div>
+	<script type="text/javascript" src="../include/js/footer.js"></script>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="../include/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="../include/js/popper.min.js"></script>
+	<script type="text/javascript" src="../include/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="../include/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../include/img/logo.png">
+	<title>NTU HPC</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+
+		body {
+			position: relative;
+            font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+		}
+		.jumbotron-fluid{
+			background-image: url("../include/img/banner.jpg");
+			background-position: center;
+            background-size: cover;
+			color: black;
+		}
+
+		.navbar{
+			background-color: rgba(0,0,0,0.9);
+		}
+		#navbar-example3 .nav-link{
+			color: gray;
+			font-size: 15px;
+		}
+		#navbar-example3 .active{
+			background-color: white!important;
+			color: #18bd97!important;
+		}
+		.title{
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: center
+        }
+        img{
+
+        }
+        .footer{
+            padding-top: 45px;
+            border-top: 1px solid #dfdfdf;
+            background-color: #fafafa;
+        }
+        .footer p{
+            margin: 0;
+            font-size: 15px;
+            color: #7f7f7f
+        }
+        .button,
+        .button::after {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .button {
+            background: none;
+            color: #2ecc71;
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 1em auto;
+            padding: 2em;
+            position: relative;
+        }
+        .button::before,
+        .button::after {
+            background: #2ecc71;
+            content: '';
+            position: absolute;
+            z-index: -1;
+        }
+        .button:hover {
+            color: #fff;
+        }
+        .btn_1::before {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn_1::after {
+            background: #fff;
+            color: black!important;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .btn_1:hover:after {
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+        }
+        .logo{
+            margin-top: 45px;
+            border-radius: 50%
+        }
+        .nav_item{
+            width: 15%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 30px;
+        }
+        .content{
+            margin-top: 25px;
+            margin-bottom: 40px;
+        }
+        .tab-pane{
+            padding-top: 30px
+        }
+
+
+	</style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="70">
+		<div id='Header'></div>
+		<script type="text/javascript" src="../include/js/navbar.js"></script>
+    <div class="jumbotron jumbotron-fluid" id="item-top">
+		<div class="container text-center">
+			<h1>2018 暑期高效能運算課程</h1>
+			<p class="lead">High Performance Computing and Big Data</p>
+		</div>
+	</div>
+
+     <div class="title">MATLAB基礎程式技術</div><br><hr>
+
+    <div class="container">
+        <div class="row content" >
+                        <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/BasicInfo.gif">
+                            <h3>基本資訊</h3>
+                        </div>
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p>【日期】 2018/7/23(一)</p>
+                            <p>【時間】  ■09:10~12:00  ■13:20~16:10</p>
+                            <p>【地點】  計中 212 教室（電腦教室）</p>
+                            <p>【費用】 臺灣大學及國立臺灣大學系統 500 元，其他 1000 元，名額40人</p>
+                            <p>【主辦單位】國立臺灣大學計算機及資訊網路中心（臺大計中）</p>
+                            <p>【協辦單位】鈦思科技股份有限公司</p>
+                        </div>
+
+    </div><hr>
+
+<div class="row content">
+                       <div class="col-12 col-md-3 " style="text-align: center">
+                            <img class="logo" src="../include/img/professor.gif">
+                            <h3>師資</h3>
+                        </div>
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                             <p><strong>鈦思科技 賴寶妮 Pony 工程師</strong></p>
+                            <p>鈦思科技工程師，主修領域為數值分析及數理統計。目前主要擔任MATLAB校園訓練課程之專任講師。</p>
+                            <a href="teacher04.html">詳細資料</a>
+                          </div>
+                    </div><hr>
+
+     <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/CourseIntro.gif">
+                            <h3>課程簡介</h3>
+                        </div>
+
+                        <div id="box" class="col-12 col-md-9" style="margin: auto;">
+                            <p>MATLAB是一高階科技運算語言、可分析資料與發展演算法和應用之互動式環境。MATLAB能夠協助解決科學運算的問題，比起傳統的程式語言，如︰C、C++、Fortran要快的多。此課程專門為 MATLAB 初學者設計，希望藉此幫助使用者充分地了解 MATLAB 程式語言。課程開始將簡介 MATLAB 操作環境、程式語法、支援的資料型態及使用方式等，並舉例說明常用的資料 I / O 指令使用方式讓初學者熟悉 MATLAB。接下來說明 MATLAB 常用的繪圖指令及其功能，程式邏輯法則，運算的方式等，讓初學者能更了解 MATLAB 的使用，並協助使用者學會如何使用建立自己的演算法函式於 MATLAB中並呼叫引用。</p>
+                            <p style="margin-bottom: -2px;">參加本課程可以協助您了解：</p>
+                            <ol>
+                                <li>MATLAB 操作環境、程式語法、支援的資料型態及使用方式</li>
+                                <li>常用的資料 I / O 指令</li>
+                                <li>繪圖指令及功能，程式邏輯法則，運算方式</li>
+                                <li>呼叫引用自己建立的演算法函式</li>
+                            </ol>
+
+
+         </div>
+      </div><hr>
+
+     <div class="row content">
+
+                       <div class="col-12 col-md-3" style="text-align: center">
+                           <img class="logo" src="../include/img/CourseContent.gif">
+                           <h3>課程內容</h3>
+                       </div>
+
+                       <div class="col-12 col-md-9" style="margin: auto;">
+                           <table class="table table-bordered table-condensed table-responsive-md">
+                               <tbody>
+                                   <tr>
+                                       <th scope="col">MATLAB Basic (上午)</th>
+                                       <th scope="col">MATLAB Basic (下午)</th>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <p>Working with the MATLAB User Interface</p>
+                                           <ul>
+                                               <li>Reading data from file</li>
+                                               <li>Saving and loading variables</li>
+                                               <li>Plotting data</li>
+                                               <li>Customizing plots</li>
+                                               <li>Calculating statistics and best-fit line</li>
+                                               <li>Exporting graphics for use in other applications</li>
+                                           </ul>
+                                           <p>Working with Data Files</p>
+                                           <ul>
+                                               <li>File types and file formats</li>
+                                               <li>Fixed-structure files</li>
+                                               <li>Spreadsheets and delimited text files</li>
+                                           </ul>
+                                       </td>
+                                       <td>
+                                           <p>Variables and Expressions</p>
+                                           <ul>
+                                               <li>Entering commands</li>
+                                               <li>Creating variables &amp; Data Type</li>
+                                               <li>Getting help</li>
+                                               <li>Accessing and modifying values in variables</li>
+                                               <li>Creating character variables</li>
+                                           </ul>
+                                           <p>Automating Commands with Scripts</p>
+                                           <ul>
+                                               <li>A modeling example</li>
+                                               <li>The Command History</li>
+                                               <li>Creating script files</li>
+                                               <li>Running scripts</li>
+                                               <li>Code sections</li>
+                                               <li>Publishing scripts</li>
+                                           </ul>
+                                       </td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                       </div>
+         </div><hr>
+
+         <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/Participants.gif">
+                           <h3>對象</h3>
+                        </div>
+
+                        <div class="col-12 col-md-9 text-md-left" style="margin: auto;text-align: center">
+                            <p>初級，具備基本電腦操作經驗及線性代數基礎概念。</p>
+                       </div>
+                   </div><hr>
+
+         <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/remark.gif">
+                           <h3>備註</h3>
+                        </div>
+
+                        <div class="col-12 col-md-9 text-md-left" style="margin: auto;text-align: center">
+                           <p>本課程不供餐，不提供上課證明或證書。</p>
+                       </div>
+                   </div><hr>
+
+
+        </div>
+
+				<div id='Footer'></div>
+				<script type="text/javascript" src="../include/js/footer.js"></script>
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="../include/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="../include/js/popper.min.js"></script>
+	<script type="text/javascript" src="../include/js/bootstrap.min.js"></script>
+
+</body>
+</html>

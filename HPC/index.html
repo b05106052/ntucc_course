@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Google-->
+    <meta itemprop = "name" content="臺大2018暑期高效能運算課程" />
+    <meta itemprop = "description" content="臺灣大學計算機及資訊網路中心（臺大計中）致力於推動高效能運算服務（High Performance Computing, HPC），除提供多樣化的高速計算設施外，在技術支援方面亦不遺餘力。"  />
+
+    <!-- Facebook -->
+    <meta property="og:title" content="臺大2018暑期高效能運算課程" />
+    <meta property="og:description" content="臺灣大學計算機及資訊網路中心（臺大計中）致力於推動高效能運算服務（High Performance Computing, HPC），除提供多樣化的高速計算設施外，在技術支援方面亦不遺餘力。" />
+    <meta property="og:type" content="課程" />
+    <!-- <meta property="og:url" content="網址" /> -->
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="./include/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="include/img/logo.png">
+	<title>NTU HPC</title>
+
+	<style type="text/css">
+		body {
+			position: relative;
+            font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+		}
+		.jumbotron-fluid{
+			background-image: url("background.jpg");
+			background-position: center;
+      background-size: cover;
+			color: white;
+		}
+		.navbar{
+			background-color: rgba(0,0,0,0.9);
+		}
+		.item-title{
+			font-size: 35px;
+			font-weight: 900;
+			text-align: center;
+            margin-bottom: 50px;
+		}
+		.item-title a{
+			text-decoration: none;
+		}
+		#navbar-example3 .nav-link{
+			color: gray;
+			font-size: 15px;
+		}
+		#navbar-example3 .active{
+			background-color: white!important;
+			color: #18bd97!important;
+		}
+		.content{
+			padding-top: 55px;
+			padding-bottom: 55px;
+		}
+		.card{
+			margin: 20px;
+			border: none;
+            cursor: pointer;
+            color: black;
+`		}
+        .card div p{
+            text-decoration: none;
+        }
+		.card:hover{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+        .footer{
+            padding-top: 45px;
+            border-top: 1px solid #dfdfdf;
+            background-color: #fafafa;
+        }
+        .footer p{
+            margin: 0;
+            font-size: 15px;
+            color: #7f7f7f
+        }
+
+        .dividing_line{
+            border-right: dotted; border-width:1px;
+        }
+        @media screen and (max-width: 767px) {
+            .dividing_line {
+        border-right: none;
+            }
+        }
+        .teacherimg{
+            transition: transform .2s; /* Animation */
+            width: 140px;
+            height: 140px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        .teacherimg:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5);
+        }
+        #item-2 a{
+            text-decoration: none;
+        }
+        .location{
+            font-size: 14px;
+        }
+        .carousel-inner {
+
+        }
+        .jcarousel img {
+            height: auto !important;
+}
+
+        .carousel-inner img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 550px;
+
+        }
+        .carousel-item{
+            background-color: black; !important
+        }
+
+        @media only screen and (max-width: 1096px) {
+            #sideBar{display: none !important;}
+        }
+        @media only screen and (max-width: 768px) {
+            .carousel-inner img{height: 200px;}
+        }
+        @media only screen and (min-width: 1500px) {
+            .Lwidth{width: 80%;margin: auto;}
+        }
+
+	</style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="70" >
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <a class="navbar-brand" href="#" style="font-size: 18px;"><img src="include/img/logo.png" style="width: 27px; height: 27px;padding-bottom: 1px;" class="d-inline-block ">
+            臺大2018暑期高效能運算課程</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						課程一覽
+					</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="./include_site/course1.html">深度學習工作坊：從理論到TensorFlow實作</a>
+						<a class="dropdown-item" href="./include_site/course2.html">MATLAB基礎程式技術</a>
+						<a class="dropdown-item" href="./include_site/course3.html">MATLAB進階程式設計</a>
+						<a class="dropdown-item" href="./include_site/course4.html">MATLAB影像處理應用</a>
+						<a class="dropdown-item" href="./include_site/course5.html">MATLAB大數據分析與深度學習</a>
+						<a class="dropdown-item" href="./include_site/course6.html">MATLAB最佳化與程式加速技巧</a>
+						<a class="dropdown-item" href="./include_site/course7.html">TensorFlow人工智慧開發</a>
+						<a class="dropdown-item" href="./include_site/course8.html">人工智慧關鍵技術探索</a>
+						<a class="dropdown-item" href="./include_site/course9.html">Deep Learning的化學應用(使用TensorFlow)</a>
+						<a class="dropdown-item" href="./include_site/course10.html">量子化學計算軟體 Gaussian 簡介與實務應用</a>
+                        <a class="dropdown-item" href="./include_site/course11.html">VASP 第一原理計算簡介</a>
+                        <a class="dropdown-item" href="./include_site/course12.html">深度學習於電腦視覺之一日速成</a>
+                        <a class="dropdown-item" href="./include_site/course13.html">機器學習與最佳化初談</a>
+<!--  <a class="dropdown-item" href="./include_site/course11.html">量子化學計算軟體 Gaussian 簡介與實務應用</a>
+                        -->
+            </div>
+                </li>
+                <li class="nav-item">
+                    <a id="navbar-example4" class="nav-link" href="#item-3">師資陣容</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link" href="./include_site/registration.html">線上報名</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navbar-example5" class="nav-link" href="#item-4">上課位置</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navbar-example6" class="nav-link" href="#item-5">聯絡資訊</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						歷年課程
+				    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="http://course.cc.ntu.edu.tw/201707/index.html">2017年課程</a>
+						<a class="dropdown-item" href="http://course.cc.ntu.edu.tw/201607/index.html">2016年課程</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+					<a class="nav-link" href="http://www.ntu.edu.tw/">台大首頁</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://www.cc.ntu.edu.tw/">計中首頁</a>
+				</li>
+            </ul>
+        </div>
+        </nav>
+	<div class="Lwidth">
+    <div class="content" id="item-0" style="padding: 0"></div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+
+        </ol>
+
+        <div class="carousel-inner jcarousel">
+            <div class="carousel-item active">
+                <a href="include_site/course1.html">
+                <img  src="./include/img/course_cap/course1.png" alt="Course 1" ></a>
+            </div>
+            <div class="carousel-item">
+                <a href="include_site/course2.html">
+                <img  class="" src="./include/img/course_cap/course2.png" alt="Course 2">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="include_site/course3.html">
+                <img  class="" src="./include/img/course_cap/course3.png" alt="Course 3">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="include_site/course4.html">
+                <img class="" src="./include/img/course_cap/course4.png" alt="Course 4"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="include_site/course5.html">
+                <img class="" src="./include/img/course_cap/course5.png" alt="Course 5">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="include_site/course6.html">
+                <img class="" src="./include/img/course_cap/course6.png" alt="Course 6">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="include_site/course7.html">
+                <img class="" src="./include/img/course_cap/course7.png" alt="Course 7">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="include_site/course8.html">
+                <img class="" src="./include/img/course_cap/course8.png" alt="Course 8">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="include_site/course9.html">
+                <img class="" src="./include/img/course_cap/course9.png" alt="Course 9">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="include_site/course10.html">
+                <img class="" src="./include/img/course_cap/course10.png" alt="Course 10">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="include_site/course11.html">
+                <img class="" src="./include/img/course_cap/course11.png" alt="Course 11">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="include_site/course12.html">
+                <img class="" src="./include/img/course_cap/course12.png" alt="Course 12">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="include_site/course13.html">
+                <img class="" src="./include/img/course_cap/course13.png" alt="Course 13">
+                </a>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+
+	<div class="row justify-content-between mx-0 w-100">
+		<div class="col-12 col-lg-11 position-relative">
+			<div class="container">
+                <div></div>
+				<div class="content" id="item-1">
+					<h4 class="item-title">簡介</h4>
+					<p>臺灣大學計算機及資訊網路中心（臺大計中）致力於推動高效能運算服務（High Performance Computing, HPC），除提供多樣化的高速計算設施外，在技術支援方面亦不遺餘力。<br><br>
+                        為協助研究團隊追隨嶄新熱門的各式技術，於 2018 暑假期間，特別與本校化學系、材料系、電機系、鈦思科技、兌全公司及侖新科技等單位，合作舉辦一系列課程，範圍由Big Data到AI及Machine Learning，內容涵蓋基礎程式撰寫到科學計算軟體的操作使用，相信對於研究人員均能有所助益，歡迎校內師生同仁及校外學界業界先進踴躍參加。</p>
+				</div>
+
+				<hr>
+
+				<div class="content" id="item-2">
+					<h5 class="item-title">課程一覽</h5>
+					<div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="include_site/course1.html">
+							<div class="card" data-toggle="modal" data-target="#Modal1">
+									<img class="card-img-top" src="./include/img/course_cap/course1.png">
+									<div class="card-body text-center">
+										<h5 class="card-title" >深度學習工作坊：從理論到TensorFlow實作</h5>
+										<p class="card-text">四零四科技 李厚均 Isaac 工程師</p>
+										<p class="card-text">2018/7/16(一)，7/17(二)，7/18(三)</p>
+									</div>
+							</div>
+                            </a>
+						</div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="include_site/course2.html">
+							<div class="card" data-toggle="modal" data-target="#Modal2">
+									<img class="card-img-top" src="./include/img/course_cap/course2.png" alt="Mail 2.0 image">
+									<div class="card-body text-center">
+										<h5 class="card-title">MATLAB基礎程式技術</h5>
+										<p class="card-text">鈦思科技 賴寶妮 Pony 工程師</p>
+										<p class="card-text">2018/7/23(一)</p>
+									</div>
+							</div>
+                            </a>
+						</div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="include_site/course3.html">
+							<div class="card" data-toggle="modal" data-target="#Modal3">
+									<img class="card-img-top" src="./include/img/course_cap/course3.png" alt="Mail 2.0 image">
+									<div class="card-body text-center">
+										<h5 class="card-title">MATLAB進階程式設計</h5>
+										<p class="card-text">鈦思科技 賴寶妮 Pony 工程師</p>
+										<p class="card-text">2018/7/24(二)</p>
+									</div>
+							</div>
+                            </a>
+						</div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="include_site/course4.html" >
+							<div class="card" data-toggle="modal" data-target="#Modal4">
+									<img class="card-img-top" src="./include/img/course_cap/course4.png" alt="Mail 2.0 image">
+									<div class="card-body text-center">
+										<h5 class="card-title">MATLAB影像處理應用</h5>
+										<p class="card-text">鈦思科技 洪詩涵 Sarah 應用工程師</p>
+										<p class="card-text">2018/7/25(三)</p>
+									</div>
+							</div>
+                            </a>
+						</div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="include_site/course5.html">
+							<div class="card" data-toggle="modal" data-target="#Modal5">
+									<img class="card-img-top" src="./include/img/course_cap/course5.png" alt="Mail 2.0 image">
+									<div class="card-body text-center">
+										<h5 class="card-title">MATLAB大數據分析與深度學習</h5>
+										<p class="card-text">鈦思科技 莊賀鈞 Claire 應用工程師 / 鈦思科技 洪詩涵 Sarah 應用工程師</p>
+										<p class="card-text">2018/7/26(四)</p>
+									</div>
+							</div>
+                            </a>
+						</div>
+
+                         <div class="col-12 col-md-6 col-lg-4">
+                             <a href="include_site/course6.html">
+							<div class="card" data-toggle="modal" data-target="#Modal6">
+									<img class="card-img-top" src="./include/img/course_cap/course6.png" alt="Mail 2.0 image">
+									<div class="card-body text-center">
+										<h5 class="card-title">MATLAB最佳化與程式加速技巧</h5>
+										<p class="card-text">鈦思科技 莊賀鈞 Claire 應用工程師</p>
+										<p class="card-text">2018/7/27(五)</p>
+									</div>
+							</div>
+                             </a>
+						</div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="include_site/course7.html">
+							<div class="card" data-toggle="modal" data-target="#Modal7">
+                                <img class="card-img-top" src="./include/img/course_cap/course7.png" alt="Mail 2.0 image">
+									<div class="card-body text-center">
+										<h5 class="card-title">TensorFlow人工智慧開發</h5>
+										<p class="card-text">鄭羽熙 博士</p>
+										<p class="card-text">2018/7/30(一)，7/31(二)</p>
+									</div>
+							</div>
+                            </a>
+						</div>
+
+						<div class="col-12 col-md-6 col-lg-4">
+                            <a href="include_site/course8.html">
+							<div class="card" data-toggle="modal" data-target="#Modal8">
+									<img class="card-img-top" src="./include/img/course_cap/course8.png" alt="Mail 2.0 image">
+									<div class="card-body text-center">
+										<h5 class="card-title">人工智慧關鍵技術探索</h5>
+										<p class="card-text">鄭羽熙 博士</p>
+										<p class="card-text">2018/8/8(三)，8/9(四)</p>
+									</div>
+							</div>
+                            </a>
+						</div>
+
+						<div class="col-12 col-md-6 col-lg-4">
+                            <a href="include_site/course9.html">
+							<div class="card" data-toggle="modal" data-target="#Modal9">
+								<img class="card-img-top" src="./include/img/course_cap/course9.png" alt="Mail 2.0 image">
+									<div class="card-body text-center">
+										<h5 class="card-title">Deep Learning的化學應用(使用TensorFlow)</h5>
+										<p class="card-text">周文祺 博士</p>
+										<p class="card-text">2018/8/20(一)，8/21(二)</p>
+									</div>
+							</div>
+                            </a>
+						</div>
+
+						<div class="col-12 col-md-6 col-lg-4">
+                            <a href="include_site/course10.html">
+							<div class="card" data-toggle="modal" data-target="#Modal10">
+									<img class="card-img-top" src="./include/img/course_cap/course10.png" alt="Mail 2.0 image">
+									<div class="card-body text-center">
+										<h5 class="card-title">量子化學計算軟體Gaussian簡介與應用</h5>
+										<p class="card-text">臺大化學系  鄭原忠 教授</p>
+										<p class="card-text">2018/8/27(一)，8/28(二)，8/29(三)</p>
+									</div>
+							</div>
+                            </a>
+						</div>
+
+                       <div class="col-12 col-md-6 col-lg-4">
+                            <a href="include_site/course11.html">
+							<div class="card" data-toggle="modal" data-target="#Modal10">
+									<img class="card-img-top" src="./include/img//course_cap/course11.png" alt="Mail 2.0 image">
+									<div class="card-body text-center">
+										<h5 class="card-title">VASP 第一原理計算簡介</h5>
+										<p class="card-text">臺大材料系 郭錦龍 副教授</p>
+										<p class="card-text">2018/8/30(四)，8/31(五)</p>
+									</div>
+							</div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="include_site/course12.html">
+							<div class="card" data-toggle="modal" data-target="#Modal10">
+									<img class="card-img-top" src="./include/img//course_cap/course12.png" alt="Mail 2.0 image">
+									<div class="card-body text-center">
+										<h5 class="card-title">深度學習於電腦視覺之一日速成</h5>
+										<p class="card-text">臺大電機系 Yu-Chiang Frank Wang 王鈺強 副教授</p>
+										<p class="card-text">2018/8/14 (二)</p>
+									</div>
+							</div>
+                            </a>
+						</div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <a href="include_site/course13.html">
+							<div class="card" data-toggle="modal" data-target="#Modal10">
+									<img class="card-img-top" src="./include/img//course_cap/course13.png" alt="Mail 2.0 image">
+									<div class="card-body text-center">
+										<h5 class="card-title">機器學習與最佳化初談</h5>
+										<p class="card-text">臺大電機系 吳沛遠 教授</p>
+										<p class="card-text">2018/8/22 (三)</p>
+									</div>
+							</div>
+                            </a>
+						</div>
+
+					</div>
+				</div>
+				<hr>
+
+
+
+				<div class="content" id="item-3">
+					<h5 class="item-title">師資陣容</h5>
+
+					<div class="row justify-content-center" style="text-align: center">
+                         <div class="col-12 col-md-6 col-lg-4">
+                            <div class="row align-items-center" style="padding-top: 25px; padding-bottom: 25px">
+                                <div class="col-12 col-sm-6"><a href="include_site/teacher03.html"><img class="teacherimg" alt="140x140"  src="./include/img/teacher/teacher03.jpg"></a></div>
+                                <div class="col-12 col-sm-6">
+
+                                    <h6>四零四科技</h6>
+                                    <h6>李厚均 Isaac 工程師</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="row align-items-center" style="padding-top: 25px; padding-bottom: 25px">
+                                <div class="col-12 col-sm-6"><a href="include_site/teacher04.html"><img class="teacherimg" alt="140x140"  src="include/img/teacher/teacher04.jpg"></a></div>
+                                <div class="col-12 col-sm-6">
+                                    <h6>鈦思科技</h6>
+                                    <h6>賴寶妮 Pony 工程師</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="row align-items-center" style="padding-top: 25px; padding-bottom: 25px">
+                                <div class="col-12 col-sm-6"><a href="include_site/teacher05.html"><img class="teacherimg" alt="140x140" src="include/img/teacher/teacher05.jpg"></a></div>
+                                <div class="col-12 col-sm-6">
+                                    <h6>鈦思科技</h6>
+                                    <h6>洪詩涵 Sarah 應用工程師</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="row align-items-center" style="padding-top: 25px; padding-bottom: 25px">
+                                <div class="col-12 col-sm-6"><a href="include_site/teacher06.html"><img class="teacherimg" alt="140x140" src="include/img/teacher/teacher06.jpg"></a></div>
+                                <div class="col-12 col-sm-6">
+                                    <h6>鈦思科技</h6>
+                                    <h6>莊賀鈞 Claire 應用工程師</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="row align-items-center" style="padding-top: 25px; padding-bottom: 25px">
+                                <div class="col-12 col-sm-6"><a href="include_site/teacher02.html"><img class="teacherimg" alt="140x140" src="include/img/teacher/teacher02.gif"></a></div>
+                                <div class="col-12 col-sm-6">
+                                    <h6>兌全有限公司</h6>
+                                    <h6>鄭羽熙 博士</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="row align-items-center" style="padding-top: 25px; padding-bottom: 25px">
+                                <div class="col-12 col-sm-6"><a href="include_site/teacher01.html"><img class="teacherimg" alt="140x140" src="./include/img/teacher/teacher01.jpg"></a></div>
+                                <div class="col-12 col-sm-6">
+                                    <h6>侖新科技股份有限公司</h6>
+                                    <h6>執行長 周文祺博士</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="row align-items-center" style="padding-top: 25px; padding-bottom: 25px">
+                                <div class="col-12 col-sm-6"><a href="include_site/teacher07.html"><img class="teacherimg" alt="140x140" src="./include/img/teacher/teacher07.gif"></a></div>
+                                <div class="col-12 col-sm-6">
+                                    <h6>臺大化學系 </h6>
+                                    <h6> 鄭原忠 教授</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="row align-items-center" style="padding-top: 25px; padding-bottom: 25px">
+                                <div class="col-12 col-sm-6"><a href="include_site/teacher08.html"><img class="teacherimg" alt="140x140" style="width: 120px" src="./include/img/teacher/teacher08.jpg"></a></div>
+                                <div class="col-12 col-sm-6">
+                                    <h6>臺大材料系 </h6>
+                                    <h6>郭錦龍 副教授</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="row align-items-center" style="padding-top: 25px; padding-bottom: 25px">
+                                <div class="col-12 col-sm-6"><a href="include_site/teacher09.html"><img class="teacherimg" alt="140x140" style="width: 120px" src="./include/img/teacher/teacher09.jpg"></a></div>
+                                <div class="col-12 col-sm-6">
+                                    <h6>臺大電機系 </h6>
+                                    <h6>吳沛遠 助理教授</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="row align-items-center" style="padding-top: 25px; padding-bottom: 25px">
+                                <div class="col-12 col-sm-6"><a href="include_site/teacher10.html"><img class="teacherimg" alt="140x140" style="width: 120px" src="./include/img/teacher/teacher10.jpg"></a></div>
+                                <div class="col-12 col-sm-6">
+                                    <h6>臺大電機系 </h6>
+                                    <h6>王鈺強 副教授</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                </div>
+				<hr>
+
+				<div class="content" id="item-4">
+					<h4 class="item-title">上課位置</h4>
+					<div class="text-right">
+						<a href="https://www.google.com/maps/dir/?api=1&destination=25.0208863,121.5398093">前往路線</a>
+					</div>
+					<div id="map" style="height: 400px;width: 100%;margin-bottom: 20px"></div>
+                    <div class="row" style="padding-top: 65px;">
+                    <div class="dividing_line col-12 col-md-6 hidden-col " >
+                         <h4>捷運文湖線</h4>
+                        <p> 【科技大樓站】下車，選擇步行約15分鐘；或騎Ubike至臺大資訊大樓站(本校辛亥路側門)，再步行2分鐘至計中。
+                            (<a href="http://www.metro.taipei/ct.asp?xItem=78479152&amp;CtNode=70089&amp;mp=122035">捷運路線圖</a>與<a href="http://web.metro.taipei/img/ALL/Route2200/012.jpg">車站位置圖</a>)。</p>
+                        <h4>捷運松山新店線</h4>
+                        <p>【公館站】下車，可由3號出口或2號出口，選擇步行25分鐘；或騎Ubike至臺大資訊大樓站(本校辛亥路側門)，再步行2分鐘至計中。(<a
+                            href="http://www.metro.taipei/ct.asp?xItem=78479152&amp;CtNode=70089&amp;mp=122035">捷運路線圖</a>與<a href="http://web.metro.taipei/img/ALL/Route2200/039.jpg">車站位置圖</a>)
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                    <h4>鄰近公車站牌</h4>
+                        <p>【臺大資訊大樓站】，公車停靠班次：298、298區、949、懷恩專車S31。 詳細請參考「<a href="http://5284.taipei.gov.tw/">5284我愛巴士」網站</a>查詢公車站牌位置。
+                        </p>
+                        <h4>汽機車停車資訊</h4>
+                        <p><a href="http://general.ga.ntu.edu.tw/zh_tw/services/car/car1">臺灣大學汽機車停車場位置圖</a>(汽車每小時60元)</p>
+                        <h4> 更多交通資訊</h4>
+                        <p><a href="http://www.ntu.edu.tw/about/map.html">臺灣大學地圖與交通資訊</a></p>
+                    </div>
+                </div>
+				</div>
+
+				<hr>
+
+				<div class="content" id="item-5">
+					<h4 class="item-title">單位與聯絡資訊</h4>
+					<div class="row location">
+                        <div class="col-xs-12 col-lg-4 col-md-12">
+                            <h5>主辦單位：</h5>
+                            <p><a href="http://www.ntu.edu.tw/" target="_blank">國立臺灣大學</a></p>
+                            <h4>承辦單位：</h4>
+                            <p><a href="http://www.cc.ntu.edu.tw/" target="_blank">國立臺灣大學計算機及資訊網路中心(臺大計中)</a></p>
+                            <p style="margin-top: -14px;">國立台灣大學高效能與科學計算技術研究中心</p>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 col-md-12">
+                            <h4>協辦單位：</h4>
+                            <p><a href="http://www.ch.ntu.edu.tw/" target="_blank">國立臺灣大學化學系</a><br>
+                                <a href="http://www.mse.ntu.edu.tw/index.php?lang=tw">國立台灣大學材料系</a><br>
+                                <a href="https://web.ee.ntu.edu.tw/">國立台灣大學電機系</a><br>
+
+                                <a href="http://www.terasoft.com.tw/" target="_blank">鈦思科技股份有限公司</a><br>
+                                <a href="http://www.gpu123.com/" target="_blank">兌全有限公司</a><br>
+                                <a href="http://www.psflyers.com.tw/">侖新科技股份有限公司</a></p>
+
+                        </div>
+                        <div class="col-xs-12 col-lg-4 col-md-12">
+                            <h5>聯絡資訊</h5>
+                            <ul style="margin-left:0px; padding-left:20px;">
+                                <li>洽詢：臺大計中/ 諮詢專線</li>
+                                <li>TEL：02-33665022</li>
+                                <li>E-mail：<a href="mailto:cchelp@ntu.edu.tw">cchelp@ntu.edu.tw</a></li>
+                                <li><a href="http://grid.ntu.edu.tw/">高效能運算服務</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+			</div>
+        </div>
+		<div class="col-1 col-lg-1 px-0 d-none d-lg-block position-sticky" style="height: calc(100vh - 56px);top:60px;min-width:90px " id="sideBar">
+			<nav id="navbar-example3" class="navbar navbar-light bg-light px-0" style="background-color: white!important">
+				<nav class="nav nav-pills flex-column">
+					<a class="nav-link active" id="item-11" href="#item-0">Top</a>
+					<a class="nav-link" href="#item-1">簡介</a>
+					<a class="nav-link" href="#item-2">課程一覽</a>
+					<a class="nav-link" href="#item-3">師資陣容</a>
+					<a class="nav-link" href="#item-4">上課位置</a>
+					<a class="nav-link" href="#item-5">聯絡資訊</a>
+				</nav>
+			</nav>
+		</div>
+         </div>
+        </div>
+        <div class="footer text-center w-100">
+            <p>© 2018 National Taiwan University 國立臺灣大學計算機及資訊網路中心. All Rights Reserved. </p><br><br>
+        </div>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="include/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="include/js/popper.min.js"></script>
+	<script type="text/javascript" src="include/js/bootstrap.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuZm8n0_Q1IXdCzLXZdq_4PReWHlGubfY&callback=initMap">
+	</script>
+    <script src="include/js/jqthumb.js"></script>
+    <script src="include/js/jqthumb.min.js"></script>
+    <script>
+        function DrawImage(hotimg){
+   $(hotimg).jqthumb({
+   classname      : 'jqthumb',
+            width          : '50%',
+            height         : '50px',
+            position       : { y: '50%', x: '50%'},
+            zoom           : '1',
+            method         : 'auto',
+   });
+}
+</script>
+	<script>
+		function initMap(){
+			var lct = {
+				lat : 25.0208863,
+				lng	:	121.5398093
+			};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom	: 17,
+				center: lct
+			});
+			var marker = new google.maps.Marker({
+				position: lct,
+				map			: map
+			});
+		}
+
+		$(document).ready(function(){
+			// Add smooth scrolling on all links inside the navbar
+			$("#navbar-example3 a,#navbar-example4, #navbar-example5,#navbar-example6, #item-11").on('click', function(event) {
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 500, function(){
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				}  // End if
+			});
+		});
+
+        $('.jcarousel')
+    .on('jcarousel:create jcarousel:reload', function() {
+        var element = $(this),
+            width = element.innerWidth();
+
+        if (width > 900) {
+            width = width / 3;
+        } else if (width > 600) {
+            width = width / 2;
+        }
+
+        element.jcarousel('items').css('width', width + 'px');
+    })
+
+	</script>
+
+</body>
+</html>

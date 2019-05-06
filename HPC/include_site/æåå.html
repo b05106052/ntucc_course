@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="../include/css/bootstrap.min.css">
+   
+    <!--Import materialize.css-->
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="../include/js/teacher.js"></script>
+
+	<title>NTU HPC</title>
+
+	<style type="text/css">
+      
+		body {
+			position: relative;
+            font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+		}
+		.jumbotron-fluid{
+			background-image: url("../background.jpg");
+			background-position: center;
+            background-size: cover;
+			color: white;
+		}
+
+		.navbar{
+			background-color: rgba(0,0,0,0.9);
+		}
+		.item-title{
+			font-size: 35px;
+			font-weight: 900;
+			text-align: center;
+		}
+		.item-title a{
+			text-decoration: none;
+		}
+		#navbar-example3 .nav-link{
+			color: gray;
+			font-size: 15px;
+		}
+		#navbar-example3 .active{
+			background-color: white!important;
+			color: #18bd97!important;
+		}
+        .title{
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: center
+        }
+        
+        .footer{
+            padding-top: 20px;
+            border-top: 1px solid #dfdfdf;
+            background-color: #fafafa;
+        }
+        .footer p{
+            margin: 0;
+            font-size: 12px;
+        }
+        .button,
+        .button::after {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .button {
+            background: none;
+            color: #2ecc71;
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 1em auto;
+            padding: 2em 6em;
+            position: relative;
+        }
+        .button::before,
+        .button::after {
+            background: #2ecc71;
+            content: '';
+            position: absolute;
+            z-index: -1;
+        }
+        .button:hover {
+            color: #fff;
+        }
+        .btn_1::before {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn_1::after {
+            background: #fff;
+            color: black!important;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .btn_1:hover:after {
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+        }
+       
+        @media only screen and (max-width: 768px) {
+            .cardBox{height:250px;}
+        }
+        @media only screen and (max-width: 576px) {
+            .card{margin-left: 30%;}
+        }
+        .imgLogo{
+            width: 250px;
+            height: 250px;
+            border-radius: 10%;
+           
+        }
+        img{
+             display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+         @media only screen and (max-width: 576px) {
+            .body{text-align: center;}
+        }
+
+	</style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="70">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+					<a class="nav-link navbar-brand" href="../index.html">HOME</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						課程一覽
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="../include_site/course1.html">深度學習工作坊：從理論到TensorFlow實作</a>
+						<a class="dropdown-item" href="../include_site/course2.html">MATLAB基礎程式技術</a>
+						<a class="dropdown-item" href="../include_site/course3.html">MATLAB進階程式設計</a>
+						<a class="dropdown-item" href="../include_site/course4.html">MATLAB影像處理的應用</a>
+						<a class="dropdown-item" href="../include_site/course5.html">MATLAB大數據分析與深度學習</a>
+						<a class="dropdown-item" href="../include_site/course6.html">MATLAB最佳化與程式加速技巧</a>
+						<a class="dropdown-item" href="../include_site/course7.html">TensorFlow人工智慧開發</a>
+						<a class="dropdown-item" href="../include_site/course8.html">人工智慧關鍵技術探索</a>
+						<a class="dropdown-item" href="../include_site/course9.html">Deep Learning的化學應用(使用TensorFlow)</a>
+						<a class="dropdown-item" href="../include_site/course10.html">量子化學計算軟體 Gaussian 簡介與實務應用</a>
+<!--  <a class="dropdown-item" href="../include_site/course11.html">量子化學計算軟體 Gaussian 簡介與實務應用</a>
+                        -->
+					</div>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="./teacher.html">師資陣容</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./registration.html">線上報名</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#item-4">上課位置</a>
+                </li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html#item-5">聯絡資訊</a>
+				</li>
+			</ul>
+            <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						歷年課程
+				    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">2017年課程</a>
+						<a class="dropdown-item" href="#">2016年課程</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+					<a class="nav-link" href="http://www.ntu.edu.tw/">台大首頁</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="http://www.cc.ntu.edu.tw/chinese/">計中首頁</a>
+				</li>
+            </ul>
+		</div>
+	</nav>
+	<div class="jumbotron jumbotron-fluid" id="item-top">
+		<div class="container text-center">
+			<h1>2018 暑期高效能運算課程</h1>
+			<p class="lead">High Performance Computing and Big Data</p>
+		</div>
+	</div>
+    <div class="row justify-content-between mx-0 w-100">
+        <div class="container">
+            <div class="title"><strong>師資陣容</strong></div><hr><br>
+            <div class="title">深度學習工作坊：從理論到TensorFlow實作</div><br><br><br>
+            <div class="row">
+                <div class="col-12 col-md-10" style="font-size: 16px;"> 
+                    <h3>四零四科技AI部門工程師 李厚均</h3>
+                    <p>學歷：國立台灣大學 電子所碩士</p>
+                    <p>經歷：</p>
+                    <ur>
+                        <li>四零四科技AI部門工程師</li>
+                        <li>T客邦人工智慧講師</li>
+                        <li>TKB人工智慧講師</li>
+                        <li>美國伊利諾香檳分校(UIUC)交換學生</li>
+                        <li>美國伊利諾香檳分校(UIUC)交換學生</li>
+                        <li>交通大學電子系學士</li>
+                    </ur>
+                      <p>專長：</p>
+                    <ur>
+                        <li>Computer Vision with Deep Learning</li>
+                        <li>Semantic Analysis</li>
+                        <li>Automatic Speech Recognition</li>
+                    </ur>
+                </div>
+                <div class="col-12 col-md-2" style="padding-left: 0px"><img class="imgLogo" src=../include/img/teacher/%E6%9D%8E%E5%8E%9A%E5%9D%87.jpg> </div>
+            </div>
+         
+            
+        </div>
+    </div>
+   
+    <div style="text-align: center">
+        <a href="./registration.html" class="button btn_1">立即前往報名</a>
+    </div>
+    
+   
+    <div class="footer text-center">
+        <h6>國立臺灣大學 計算機及資訊網路中心</h6>
+        <p>諮詢服務電話:(02)3366-5022或3366-5023</p>
+        <p>諮詢服務信箱：<a href="mailto:cchelp@ntu.edu.tw" target="_top">cchelp@ntu.edu.tw</a></p>
+    </div>
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="../include/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="../include/js/popper.min.js"></script>
+	<script type="text/javascript" src="../include/js/bootstrap.min.js"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		
+		$(document).ready(function(){ 
+			// Add smooth scrolling on all links inside the navbar
+			$("#navbar-example3 a").on('click', function(event) {
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 500, function(){
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				}  // End if
+			});
+		});
+	</script>
+</body>
+</html>

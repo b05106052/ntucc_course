@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="../include/css/bootstrap.min.css">
+    <link rel="shortcut icon"  href="../include/img/logo.png">
+	<title>NTU HPC</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+
+		body {
+			position: relative;
+            font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+		}
+		.jumbotron-fluid{
+			background-image: url("../include/img/banner.jpg");
+			background-position: center;
+            background-size: cover;
+			color: black;
+		}
+
+		.navbar{
+			background-color: rgba(0,0,0,0.9);
+		}
+		#navbar-example3 .nav-link{
+			color: gray;
+			font-size: 15px;
+		}
+		#navbar-example3 .active{
+			background-color: white!important;
+			color: #18bd97!important;
+		}
+		.title{
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: center
+        }
+        img{
+
+        }
+        .footer{
+            padding-top: 45px;
+            border-top: 1px solid #dfdfdf;
+            background-color: #fafafa;
+        }
+        .footer p{
+            margin: 0;
+            font-size: 15px;
+            color: #7f7f7f
+        }
+        .button,
+        .button::after {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .button {
+            background: none;
+            color: #2ecc71;
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 1em auto;
+            padding: 2em;
+            position: relative;
+        }
+        .button::before,
+        .button::after {
+            background: #2ecc71;
+            content: '';
+            position: absolute;
+            z-index: -1;
+        }
+        .button:hover {
+            color: #fff;
+        }
+        .btn_1::before {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn_1::after {
+            background: #fff;
+            color: black!important;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .btn_1:hover:after {
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+        }
+        .logo{
+            margin-top: 45px;
+            border-radius: 50%
+        }
+        .nav_item{
+            width: 15%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 30px;
+        }
+        .content{
+            margin-top: 25px;
+            margin-bottom: 40px;
+
+        }
+        .tab-pane{
+            padding-top: 30px
+        }
+
+	</style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="70">
+	<div id='Header'></div>
+	<script type="text/javascript" src="../include/js/navbar.js"></script>
+    <div class="jumbotron jumbotron-fluid" id="item-top">
+		<div class="container text-center">
+			<h1>2018 暑期高效能運算課程</h1>
+			<p class="lead">High Performance Computing and Big Data</p>
+		</div>
+	</div>
+    <div class="title">深度學習工作坊：從理論到TensorFlow實作</div><br><hr>
+
+    <div class="container">
+        <div class="row content" >
+
+                        <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/BasicInfo.gif">
+                            <h3>基本資訊</h3>
+                        </div>
+
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p>【日期】 2018/7/16(一)，7/17(二)，7/18(三)</p>
+                            <p>【時間】 ■09:10~12:00 ■13:20~16:10</p>
+                            <p>【地點】 計中 212 教室（電腦教室）</p>
+                            <!--p>【時數】 6小時</p-->
+                            <p>【費用】 臺灣大學及國立臺灣大學系統 1500 元，其他 3000 元</p>
+                            <p>【主辦單位】國立臺灣大學計算機及資訊網路中心（臺大計中）</p>
+            </div>
+      </div><hr>
+
+
+
+      <div class="row content">
+          <div class="col-12 col-md-3" style="text-align: center">
+              <img class="logo" src="../include/img/professor.gif">
+              <h3>師資</h3>
+          </div>
+          <div class="col-12 col-md-9" style="margin: auto;">
+
+              <p><strong>四零四科技 李厚均 Isaac 工程師 </strong></p>
+              <p>學歷：國立台灣大學 電子所碩士</p>
+              <p style="margin-bottom: -2px;">經歷：</p>
+              <ol>
+                  <li>四零四科技AI部門工程師</li>
+                  <li>T客邦人工智慧講師</li>
+                  <li>TKB人工智慧講師</li>
+                  <li>美國伊利諾香檳分校(UIUC)交換學生</li>
+                  <li>交通大學電子系學士</li>
+              </ol>
+              <p style="margin-bottom: -2px;">專長：</p>
+              <ol>
+                  <li>Computer Vision with Deep Learning</li>
+                  <li>Semantic Analysis</li>
+                  <li>Automatic Speech Recognition</li>
+              </ol>
+          <a href="teacher03.html">詳細資料</a>
+
+          </div>
+          </div><hr>
+
+
+     <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/CourseIntro.gif">
+                            <h3>課程簡介</h3>
+                        </div>
+                        <div id="box" class="col-12 col-md-9" style="margin: auto;">
+                            <p>隨著人工智慧(AI)時代的來臨，資料科學已成為一門重要的顯學，尤其是近年來深度學習(Deep Learning)許多重大的突破，更加速了許多智能化的應用及發展，也大大的改變每個人的生活。</p>
+                            <p>現在，Deep Learning不只能讓電腦下棋下贏人類棋王， 在影像識別領域上，其辨識物體的錯誤率也已經達到小於人類的水準，這都顯示出其不可忽視的發展潛力，相信在不久的未來，將會有更多Deep Learning 驚人的結果跑出來。</p>
+                            <p>本課程除了會深入的探討三種常見的類神經網路外，也會使用目前最夯的深度學習套件Google TensorFlow來帶學生實做這些類神經網路。</p>
+                        </div>
+      </div><hr>
+
+     <div class="row content">
+
+                       <div class="col-12 col-md-3" style="text-align: center">
+                           <img class="logo" src="../include/img/CourseContent.gif">
+                           <h3>課程內容</h3>
+                       </div>
+                       <div class="col-12 col-md-9" style="margin: auto;">
+                           <table class="table table-bordered table-condensed table-responsive-md">
+                               <tbody>
+                                   <tr>
+                                       <th></th>
+                                       <th  scope="col">Day 1</th>
+                                       <th scope="col">Day 2</th>
+                                       <th scope="col">Day 3</th>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <p>09:10~12:00</p>
+                                       </td>
+                                       <td>
+                                           <p>【理論】 Deep Learning Introduction</p>
+                                           <ul>
+                                               <li>基礎類神經網路介紹</li>
+                                               <li>深度學習現在的應用與優勢</li>
+                                               <li>為什麼要使用 TensorFlow</li>
+                                           </ul>
+                                               <p>【實作】 TensorFlow Basic</p>
+                                           <ul>
+                                               <li>張量的操作及觀念</li>
+                                               <li>常見的類神經網路函數</li>
+                                           </ul>
+                                       </td>
+                                       <td>
+                                           <p>【理論】 CNN Introduction</p>
+                                           <ul>
+                                               <li>類神經網路在影像辨識的應用</li>
+                                               <li>介紹著名的 CNN 類神經網路 </li>
+                                               <li>進階的影像辨識議題討論</li>
+                                           </ul>
+                                       </td>
+                                       <td><p>【理論】 RNN Introduction</p>
+                                           <ul>
+                                               <li>Word2vect的介紹</li>
+                                               <li>傳統 RNN 介紹</li>
+                                               <li>LSTM/GRU 的介紹</li>
+                                           </ul>
+                                               <p>【實作】RNN Implementation</p>
+                                           <ul>
+                                               <li>MNIST手寫辨識</li>
+                                               <li>文字語意關係實作</li>
+                                               <li>垃圾郵件分類</li>
+                                           </ul>
+
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>12:00~13:20</td>
+                                       <td colspan="3" style="text-align: center">Lunch Time</td>
+                                   </tr>
+                                   <tr>
+                                       <td>13:20~16:10</td>
+                                       <td> <p>【理論】 DNN Introduction</p>
+                                           <ul>
+                                               <li>認識最基礎的類神經網路</li>
+                                               <li>如何定義損失函數</li>
+                                               <li>如何優化類神經網路</li>
+                                           </ul>
+                                               <p>【實作】 DNN Implementation</p>
+                                           <ul>
+                                               <li>手寫辨識 MNIST</li>
+                                               <li>視覺化類神經網絡</li>
+                                           </ul></td>
+                                       <td>
+                                           <p>【實作】 CNN Implementation</p>
+                                           <ul>
+                                               <li>MNIST/notMNIST/Cifar 10影像圖片分類</li>
+                                               <li>比較 DNN與 CNN的差異</li>
+                                           </ul>
+                                               <p>【練習】</p>
+                                           <ul>
+                                               <li>CNN 題目練習</li>
+                                               <li>CNN 題目練習解答講解</li>
+                                           </ul>
+                                       </td>
+                                       <td> <p>【練習】</p>
+                                           <ul>
+                                               <li>RNN題目練習</li>
+                                               <li>RNN題目練習解答講解</li>
+                                           </ul>
+                                               <p>【理論】 類神經網絡實務問題討論</p>
+                                           <ul>
+                                               <li>實務上會遇到之問題</li>
+                                               <li>類別不平衡</li>
+                                               <li>業界如何導入Deep Learning</li>
+                                           </ul></td>
+                                   </tr>
+                               </tbody>
+                           </table><br>
+                           <p>*課程講義為英文</p>
+                           <p>*以上各項目將視班級進度略有調整</p>
+                       </div>
+         </div><hr>
+
+         <div class="row content content-5">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/Participants.gif">
+                           <h3>對象</h3>
+                        </div>
+                        <div class="col-12 col-md-9 text-md-left" style="margin: auto;text-align: center">
+                           <p>本課程適合對深度學習有興趣學員修習</p>
+                            <p>建議至少會一種程式語言(python佳)</p>
+                       </div>
+         </div><hr>
+
+         <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/remark.gif">
+                           <h3>備註</h3>
+                        </div>
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p>1.本課程不供餐，不提供上課證明或證書。</p>
+                            <p>2.如因報名人數過多，本中心得更換教室。請學員務必於上課前三日，上網確認上課地點。</p>
+                       </div>
+                   </div><hr>
+       </div>
+
+<div id='Footer'></div>
+<script type="text/javascript" src="../include/js/footer.js"></script>
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="../include/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="../include/js/popper.min.js"></script>
+	<script type="text/javascript" src="../include/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

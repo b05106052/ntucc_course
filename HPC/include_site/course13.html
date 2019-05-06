@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="../include/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../include/img/logo.png">
+	<title>NTU HPC</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+
+		body {
+			position: relative;
+            font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+		}
+		.jumbotron-fluid{
+			background-image: url("../include/img/banner.jpg");
+			background-position: center;
+            background-size: cover;
+			color: black;
+		}
+
+		.navbar{
+			background-color: rgba(0,0,0,0.9);
+		}
+		#navbar-example3 .nav-link{
+			color: gray;
+			font-size: 15px;
+		}
+		#navbar-example3 .active{
+			background-color: white!important;
+			color: #18bd97!important;
+		}
+		.title{
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: center
+        }
+        img{
+
+        }
+        .footer{
+            padding-top: 45px;
+            border-top: 1px solid #dfdfdf;
+            background-color: #fafafa;
+        }
+        .footer p{
+            margin: 0;
+            font-size: 15px;
+            color: #7f7f7f
+        }
+        .button,
+        .button::after {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .button {
+            background: none;
+            color: #2ecc71;
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 1em auto;
+            padding: 2em;
+            position: relative;
+        }
+        .button::before,
+        .button::after {
+            background: #2ecc71;
+            content: '';
+            position: absolute;
+            z-index: -1;
+        }
+        .button:hover {
+            color: #fff;
+        }
+        .btn_1::before {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn_1::after {
+            background: #fff;
+            color: black!important;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .btn_1:hover:after {
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+        }
+        .logo{
+            margin-top: 45px;
+            border-radius: 50%
+        }
+        .content{
+            margin-top: 25px;
+            margin-bottom: 40px;
+        }
+        .nav_item{
+            width: 15%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 30px;
+        }
+        .tab-pane{
+            padding-top: 30px
+        }
+
+	</style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="70">
+	<div id='Header'></div>
+	<script type="text/javascript" src="../include/js/navbar.js"></script>
+  <div class="jumbotron jumbotron-fluid" id="item-top">
+		<div class="container text-center">
+			<h1>2018 暑期高效能運算課程</h1>
+			<p class="lead">High Performance Computing and Big Data</p>
+		</div>
+	</div>
+
+     <div class="title">機器學習與最佳化初談</div><br><hr>
+
+    <div class="container">
+        <div class="row content" >
+                        <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/BasicInfo.gif">
+                            <h3>基本資訊</h3>
+                        </div>
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p>【日期】 2018/8/22 (三)</p>
+                            <p>【時間】  ■09:10~12:00  ■13:20~16:10</p>
+                            <p>【地點】  計中 106 教室（階梯教室）</p>
+                            <p>【費用】  臺灣大學及國立臺灣大學系統 500 元，其他 1000 元，名額40人</p>
+                            <p>【主辦單位】國立臺灣大學計算機及資訊網路中心（臺大計中）</p>
+                            <p>【協辦單位】國立臺灣大學電機系</p>
+                        </div>
+
+    </div><hr>
+            <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/professor.gif">
+                            <h3>師資</h3>
+                        </div>
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p><strong>吳沛遠 Pei-Yuan Wu</strong></p>
+                            <p>國立臺灣大學電機工程學系 助理教授</p>
+                            <p>學歷：普林斯頓大學電機工程博士(2015)/國立臺灣大學電機工程學士(2009)</p>
+                            <p style="margin-bottom: -2px;">經歷：</p>
+                            <ol>
+                                <li>國立台灣大學電機工程學系 助理教授 (2017~迄今)</li>
+                                <li>台灣積體電路公司 主任工程師 (2015~2017)</li>
+                            </ol>
+                            <p style="margin-bottom: -2px;">研究興趣:</p>
+                            <ol>
+                                <li>隱私維護機器學習: 將同態加密、亂碼電路等加密機制加入機器學習演算法，以降低個人隱私資料在機器學習中遭到揭露的風險。</li>
+                                <li>核方法: 提升核方法的運算效率與強健性，以應用於大數據分析。</li>
+                                <li>主動識別: 本研究團隊與普林斯頓大學及愛荷華州立大學合作，透過分析人機互動過程中使用者的生物特徵與行為特徵進行持續性且非干擾性身分識別</li>
+                            </ol>
+                            <a href="teacher09.html">詳細資料</a>
+                          </div>
+                    </div><hr>
+            <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/CourseIntro.gif">
+                            <h3>課程簡介</h3>
+                        </div>
+
+                        <div id="box" class="col-12 col-md-9" style="margin: auto;">
+                           <p>最佳化方法是近數十年發展起來的，其運用數學方法研究各種系統的最佳化方案，以作為決策時的參考。在機器學習中，如何由大量訓練資料中找出最好的模型以做最佳的預測，其背後亦是滿滿的最佳化方法。了解最佳化方法，學習機器學習演算法才能知其然，亦知其所以然。</p>
+                            <p>本課程重視嚴謹的數學論證，目標是以理工科系大學生具備之數學工具，從著名的支撐向量機出發，完整證明其背後的凸函數最佳化數學理論。課程內容包括</p>
+                            <ol>
+                                <li style="margin: 5px;">支撐向量機 (Support Vector Machine, SVM)</li>
+                                <p>我們將介紹大名鼎鼎的支撐向量機，包括何謂硬/軟支撐向量機(hard/soft SVM)、如何訓練、以及何謂高斯核支撐向量機(Gaussian radial basis function kernel SVM)，及其背後的凸函數最佳化、核方法等數學原理。</p>
+                                <li style="margin: 5px;">拉格朗日對偶問題 (Lagrangian Dual Problem)</li>
+                                <p>一個最佳化問題可以從原始問題(primal problem)與對偶問題(dual problem)去看待，為一體兩面。我們一方面以正式的數學定義何謂對偶角度，一方面提供幾何上的解釋。</p>
+                                <li style="margin: 5px;">弱對偶定理與強對偶定理(Weak/Strong Duality Theorem)</li>
+                                <p>在甚麼樣的情形下原始問題與對偶問題其最佳化的結果是相同的？我們將以嚴謹的數學推論說清楚。透過證明強對偶定理，我們亦將解釋SVM的KKT定理。</p>
+                            </ol>
+
+
+
+         </div>
+      </div><hr>
+            <div class="row content">
+
+                       <div class="col-12 col-md-3" style="text-align: center">
+                           <img class="logo" src="../include/img/CourseContent.gif">
+                           <h3>課程內容</h3>
+                       </div>
+
+                       <div class="col-12 col-md-9" style="margin: auto;">
+                           <table class="table table-bordered table-condensed table-responsive-md">
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">Introduction to Support Vector Machine</th>
+                                        <th scope="col">Introduction to Convex Optimization</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <ol>
+                                                <li>Linear binary classifier</li>
+                                                <li>Optimal margin hyperplanes</li>
+                                                <li>Soft Margin Solution for nonlinear separable classes</li>
+                                                <li>Gradient Descent Optimization</li>
+                                                <li>Primal and Dual Formulations</li>
+                                                <li>Nonlinear binary classifier with kernel trick</li>
+                                            </ol>
+                                        </td>
+                                        <td>
+                                            <ol>
+                                                <li>The Lagrangian Dual Problem</li>
+                                                <li>Geometric Interpretation of the Lagrangian Dual</li>
+                                                <li>Weak Duality</li>
+                                                <li>Strong Duality</li>
+                                                <li>KKT conditions in Support Vector Machine</li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                               </tbody>
+                           </table>
+                       </div>
+         </div><hr>
+            <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/Participants.gif">
+                           <h3>對象</h3>
+                        </div>
+
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                           <p>具備微積分、線性代數等相關基礎概念。</p>
+                            <p>喜愛探究數學本質。</p>
+                            <p>若具備分析學基礎(如高等微積分)可更易了解相關數學證明。若沒有亦無妨。</p>
+
+                       </div>
+                   </div><hr>
+            <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/remark.gif">
+                           <h3>備註</h3>
+                        </div>
+
+
+                        <div class="col-12 col-md-9 text-md-left" style="margin: auto;text-align: center">
+                          <p>1.本課程不供餐，不提供上課證明或證書。</p>
+                            <p>2.如因報名人數過多，本中心得更換教室。請學員務必於上課前三日，上網確認上課地點。</p>
+
+                        </div>
+         </div><hr>
+        </div>
+
+	<div id='Footer'></div>
+	<script type="text/javascript" src="../include/js/footer.js"></script>
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="../include/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="../include/js/popper.min.js"></script>
+	<script type="text/javascript" src="../include/js/bootstrap.min.js"></script>
+
+</body>
+</html>

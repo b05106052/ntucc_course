@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="../include/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../include/img/logo.png">
+	<title>NTU HPC</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+
+		body {
+			position: relative;
+            font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+		}
+		.jumbotron-fluid{
+			background-image: url("../include/img/banner.jpg");
+			background-position: center;
+            background-size: cover;
+			color: black;
+		}
+
+		.navbar{
+			background-color: rgba(0,0,0,0.9);
+		}
+		.item-title{
+			font-size: 35px;
+			font-weight: 900;
+			text-align: center;
+		}
+		.item-title a{
+			text-decoration: none;
+		}
+		#navbar-example3 .nav-link{
+			color: gray;
+			font-size: 15px;
+		}
+		#navbar-example3 .active{
+			background-color: white!important;
+			color: #18bd97!important;
+		}
+		.content{
+			padding-top: 55px;
+			padding-bottom: 55px;
+		}
+        .title{
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: center
+        }
+        .footer{
+            padding-top: 45px;
+            border-top: 1px solid #dfdfdf;
+            background-color: #fafafa;
+        }
+        .footer p{
+            margin: 0;
+            font-size: 15px;
+            color: #7f7f7f
+        }
+
+        .button,
+        .button::after {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .button {
+            background: none;
+            color: #2ecc71;
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 1em auto;
+            padding: 2em;
+            position: relative;
+        }
+        .button::before,
+        .button::after {
+            background: #2ecc71;
+            content: '';
+            position: absolute;
+            z-index: -1;
+        }
+        .button:hover {
+            color: #fff;
+        }
+        .btn_1::before {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn_1::after {
+            background: #fff;
+            color: black!important;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .btn_1:hover:after {
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+        }
+        .logo{
+            float: left;
+        }
+        .text{
+            border-left: 1px dashed #cfcfcf;
+            float: right;
+        }
+        .RegContent{
+            border: 2px dashed #cfcfcf;
+            background-color: #f8f8f8;
+            padding: 15px;
+        }
+        .num_symbol{
+            width: 50px;
+            margin-bottom: 15px;
+        }
+        .reg{
+            margin-top: 30px
+        }
+
+	</style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="70">
+	<div id='Header'></div>
+	<script type="text/javascript" src="../include/js/navbar.js"></script>
+  <div class="jumbotron jumbotron-fluid" id="item-top">
+		<div class="container text-center">
+			<h1>2018 暑期高效能運算課程</h1>
+			<p class="lead">High Performance Computing and Big Data</p>
+		</div>
+	</div>
+
+		<div class="container" style="margin-bottom: 100px;">
+
+            <div class="reg" >
+                <img class="num_symbol" src="../include/img/one.png">
+                <h3 style="display: inline; padding-left: 70px;" class="panel-title"><strong>選課報名</strong></h3>
+                <div class="RegContent">
+                    <ul>
+                        <li>請至【<a href="http://teach.cc.ntu.edu.tw/course/courseOverview.asp" target="_blank">課程列表</a>】確認欲報名的課程</li>
+                        <li>請前往【<a href="https://my.ntu.edu.tw/register/classregv4.asp">線上報名表</a>】填寫報名資訊(非臺灣大學系統之學員，報名時身份請選擇「校外人士」，其餘欄位若不需要，則請任意選。</li>
+                    </ul>
+                </div>
+              </div>
+             <div class="reg" >
+                 <img class="num_symbol" src="../include/img/two.png">
+                 <h3 style="display: inline; padding-left: 70px;"  class="panel-title"><strong> 費用繳交</strong></h3>
+                   <div class="RegContent">
+                       <ul>
+                           <li>選擇繳費方式：現場 或 ATM/超商</li>
+                           <li>三日內必須完成繳費</li>
+                       </ul>
+                 </div>
+               </div>
+               <div class="reg" >
+                   <img class="num_symbol" src="../include/img/three.png">
+                   <h3 style="display: inline; padding-left: 70px;" class="panel-title"><strong> 登錄完成</strong></h3>
+                   <div class="RegContent">
+                       <p>若選擇「ATM/超商」繳費者,請務必於繳費完成後，<br><a href="https://my.ntu.edu.tw/register/PayRecord.asp">上網填報</a>，避免資格遭取消</p>
+                   </div>
+              </div>
+            </div>
+
+
+        <div style="text-align: center">
+            <p class="button btn_1">~ 歡迎校外學界業界先進參與 ~</p>
+        </div>
+    <div class="footer text-center">
+        <p>© 2018 National Taiwan University 國立臺灣大學計算機及資訊網路中心. All Rights Reserved. </p><br><br>
+    </div>
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="../include/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="../include/js/popper.min.js"></script>
+	<script type="text/javascript" src="../include/js/bootstrap.min.js"></script>
+
+	<script>
+
+
+		$(document).ready(function(){
+			// Add smooth scrolling on all links inside the navbar
+			$("#navbar-example3 a").on('click', function(event) {
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 500, function(){
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				}  // End if
+			});
+		});
+	</script>
+</body>
+</html>

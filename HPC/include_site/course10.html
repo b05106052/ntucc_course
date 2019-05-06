@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="../include/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../include/img/logo.png">
+	<title>NTU HPC</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+
+		body {
+			position: relative;
+            font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+		}
+		.jumbotron-fluid{
+			background-image: url("../include/img/banner.jpg");
+			background-position: center;
+            background-size: cover;
+			color: black;
+		}
+
+		.navbar{
+			background-color: rgba(0,0,0,0.9);
+		}
+		#navbar-example3 .nav-link{
+			color: gray;
+			font-size: 15px;
+		}
+		#navbar-example3 .active{
+			background-color: white!important;
+			color: #18bd97!important;
+		}
+		.title{
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: center
+        }
+        img{
+
+        }
+        .footer{
+            padding-top: 45px;
+            border-top: 1px solid #dfdfdf;
+            background-color: #fafafa;
+        }
+        .footer p{
+            margin: 0;
+            font-size: 15px;
+            color: #7f7f7f
+        }
+        .button,
+        .button::after {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .button {
+            background: none;
+            color: #2ecc71;
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 1em auto;
+            padding: 2em;
+            position: relative;
+        }
+        .button::before,
+        .button::after {
+            background: #2ecc71;
+            content: '';
+            position: absolute;
+            z-index: -1;
+        }
+        .button:hover {
+            color: #fff;
+        }
+        .btn_1::before {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn_1::after {
+            background: #fff;
+            color: black!important;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .btn_1:hover:after {
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+        }
+        .logo{
+            margin-top: 45px;
+            border-radius: 50%
+        }
+        .content{
+            margin-top: 25px;
+            margin-bottom: 40px;
+        }
+        .nav_item{
+            width: 15%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 30px;
+        }
+        .tab-pane{
+            padding-top: 30px
+        }
+
+	</style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="70">
+	<div id='Header'></div>
+	<script type="text/javascript" src="../include/js/navbar.js"></script>
+  <div class="jumbotron jumbotron-fluid" id="item-top">
+		<div class="container text-center">
+			<h1>2018 暑期高效能運算課程</h1>
+			<p class="lead">High Performance Computing and Big Data</p>
+		</div>
+	</div>
+
+     <div class="title">量子化學計算軟體 Gaussian 簡介與實務應用</div><br><hr>
+
+    <div class="container">
+        <div class="row content" >
+                        <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/BasicInfo.gif">
+                            <h3>基本資訊</h3>
+                        </div>
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p>【日期】 2018/8/27(一)，8/28(二)，8/29(三)</p>
+                            <p>【時間】  ■09:10~12:00  ■13:20~16:10</p>
+                            <p>【地點】  計中 212 教室（電腦教室）</p>
+                            <p>【費用】 臺灣大學及國立臺灣大學系統 1000 元，其他 2000 元，名額40人</p>
+                            <p>【主辦單位】國立臺灣大學計算機及資訊網路中心（臺大計中）</p>
+                        </div>
+
+    </div><hr>
+            <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/professor.gif">
+                            <h3>師資</h3>
+                        </div>
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p><strong>臺大化學系  鄭原忠 教授</strong></p>
+                            <p>國立臺灣大學 化學系副教授</p>
+                            <p>學歷：美國麻省理工學院 化學博士 (2006) /國立台灣大學 化學碩士 (1997)</p>
+                            <p style="margin-bottom: -2px;">經歷：</p>
+                            <ol>
+                                <li>國立台灣大學化學系副教授(2015/08~迄今)</li>
+                                <li>國立台灣大學化學系助理教授(2009/07~2015/07)</li>
+                                <li>美國加州大學柏克萊分校博士後研究員(2006/04~ 2009/06)</li>
+                            </ol>
+                            <p style="margin-bottom: -1px;">研究專長：理論物理化學、非線性光譜學理論</p>
+                            <ol>
+                                <li>光合作用中的能量與電子轉移過程</li>
+                                <li>奈米系統中電子激態的非輻射弛豫理論</li>
+                                <li>凝態分子系統之光化學反應模擬方法</li>
+                                <li>有機高分子材料光電性質之多尺度模擬方法</li>
+                                <li>非線性光譜學方法與理論模擬</li>
+                            </ol>
+
+                            <p>個人網頁：<a href="http://quantum.ch.ntu.edu.tw/ycclab" title="前往鄭原忠個人網頁">http://quantum.ch.ntu.edu.tw/ycclab</a></p>
+                            <a href="teacher07.html">詳細資料</a>
+                          </div>
+                    </div><hr>
+            <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/CourseIntro.gif">
+                            <h3>課程簡介</h3>
+                        </div>
+
+                        <div id="box" class="col-12 col-md-9" style="margin: auto;">
+                            <p>近幾年來，理論計算已經成為化學相關領域推動研究工作不可或缺的一環，2013年諾貝爾化學奬頒給了對理論計算貢獻卓越的三位理論化學家，表章他們「對複雜體系多尺度模擬方法上的理論研究」做出的貢獻，便是一個里程碑。現在的化學研究成果在投稿到優良期刊上時，常常都會被要求附以理論計算的結果來支持實驗的結論，清楚的說明理論計算在化學研究上面的重要性。</p>
+                            <p>在眾多的計算化學軟體之中， Gaussian 是一個非常受到歡迎而且功能極為強大的軟體，它最早是由約翰．波普爵士 (1998年諾貝爾化學獎得主) 與他在卡內基梅隆大學的研究團隊發展出的一套程式，之後很快的商業化，由私人公司經營維護 <a href="http://www.gaussian.com">http://www.gaussian.com</a>，目前已經是最多人使用的計算化學軟體。Gaussian的基礎是量子力學理論，計算主要處理分子系統的電子結構問題，它被廣泛應用在各式化學系統中，可用來模擬、預測許多分子系統的化學反應、結構變化等等物理與化學性質，例如：化合物的能量和結構、化學反應過渡態的能量和結構、分子的振動頻率、紅外線和拉曼光譜、UV/VIS 光譜、熱化學性質、鍵結能和化學反應活化能、化學反應路徑、分子軌域、原子電荷、偶極矩、電子親和能和游離能、分子材料的極化和超極化張量、分子的靜電位能和電子密度以及核磁共振遮蔽張量等等。Gaussian自1970年推出以來，不斷更新至今，最新版本為Gaussian 16，在台灣大學，計資中心的叢集電腦上便提供了 Gaussian 軟體，使用者可以以高速運算系統執行 Gaussian 計算。</p>
+                            <p>本課程將為大家介紹化學理論計算的基礎概念，並藉由實際操作讓學員們熟悉 Gaussian 的計算執行以及應用。我們將會專注於基於第一原理 (first principle, ab initio)，特別是密度泛函理論 (density functional theory) 的電子結構方法，用來計算分子的性質以及反應特性，課程之中我們也會簡單談到這些計算的原理以及計算方法的使用範圍與優缺點，不過整體課程內容會強調實際操作以及使用計算軟體實務上會遭遇的問題，希望透過這個課程讓就算不是理論化學背景的使用者，也可以利用 Gaussian 這個工具來解決在研究上面碰到的問題。</p>
+
+
+
+         </div>
+      </div><hr>
+            <div class="row content">
+
+                       <div class="col-12 col-md-3" style="text-align: center">
+                           <img class="logo" src="../include/img/CourseContent.gif">
+                           <h3>課程內容</h3>
+                       </div>
+
+                       <div class="col-12 col-md-9" style="margin: auto;">
+                           <p><strong>第一天: Gaussian 簡介</strong></p>
+                           <p>&nbsp;- 量子計算化學原理、分子軌域理論簡介</p>
+                           <p>&nbsp;- 基本 Unix 系統指令介紹</p>
+                           <p>&nbsp;- Gaussian 計算化學軟體 、台大計資中心 Gaussian 計算環境簡介</p>
+                           <p>&nbsp;- Avogadro 圖形介面程式: 輸入檔製作以及計算結果分析</p>
+                           <p>&nbsp;- 單點計算以及分子軌域分析</p>
+                           <p><strong>第二天: 用 Gaussian 了解化學反應</strong></p>
+                           <p>&nbsp;- 反應位能平面簡介</p>
+                           <p>&nbsp;- 密度泛函理論原理與實例分析</p>
+                           <p>&nbsp;- 化學反應路徑計算與中間體分析</p>
+                           <p>&nbsp;- 活化能分析與反應速率常數</p>
+                           <p><strong>第三天: 用 Gaussian 研究分子激發態性質</strong></p>
+                           <p>&nbsp;- 分子激發態理論簡介</p>
+                           <p>&nbsp;- 分子激發態性質計算</p>
+                           <p>&nbsp;- 應用 Gaussian 計算解釋光物理問題</p>
+                           <p>&nbsp;- 溶劑效應計算以及分子螢光效應</p>
+                       </div>
+         </div><hr>
+            <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/Participants.gif">
+                           <h3>對象</h3>
+                        </div>
+
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p>願意學習Linux基本指令操作及檔案編輯功能</p>
+                            <p>願意學習基本的叢集系統操作能力</p>
+                            <p>適合化學、物理、化工、材料等等領域有新學習量子化學計算的研究人員參與，不需要理論物理化學背景。</p>
+                       </div>
+                   </div><hr>
+            <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/remark.gif">
+                           <h3>備註</h3>
+                        </div>
+
+
+                        <div class="col-12 col-md-9 text-md-left" style="margin: auto;text-align: center">
+                            <p>本課程安排為每日上午講師授課與演示，下午學員操作實習。</p>
+                            <p>全程參與本課程，並且通過評量，將核發結業證書。</p>
+                        </div>
+         </div><hr>
+        </div>
+	<div id='Footer'></div>
+	<script type="text/javascript" src="../include/js/footer.js"></script>
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="../include/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="../include/js/popper.min.js"></script>
+	<script type="text/javascript" src="../include/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="../include/css/bootstrap.min.css">
+
+    <!--Import materialize.css-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="../include/js/teacher.js"></script>
+    <link rel="shortcut icon" href="../include/img/logo.png">
+	<title>NTU HPC</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+
+		body {
+			position: relative;
+            font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+		}
+		.jumbotron-fluid{
+			background-image: url("../include/img/banner.jpg");
+			background-position: center;
+            background-size: cover;
+			color: black;
+		}
+
+		.navbar{
+			background-color: rgba(0,0,0,0.9);
+		}
+		.item-title{
+			font-size: 35px;
+			font-weight: 900;
+			text-align: center;
+		}
+		.item-title a{
+			text-decoration: none;
+		}
+		#navbar-example3 .nav-link{
+			color: gray;
+			font-size: 15px;
+		}
+		#navbar-example3 .active{
+			background-color: white!important;
+			color: #18bd97!important;
+		}
+        .title{
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: center
+        }
+        .footer{
+            padding-top: 45px;
+            border-top: 1px solid #dfdfdf;
+            background-color: #fafafa;
+        }
+        .footer p{
+            margin: 0;
+            font-size: 15px;
+            color: #7f7f7f
+        }
+        .button,
+        .button::after {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .button {
+            background: none;
+            color: #2ecc71;
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 1em auto;
+            padding: 2em;
+            position: relative;
+        }
+        .button::before,
+        .button::after {
+            background: #2ecc71;
+            content: '';
+            position: absolute;
+            z-index: -1;
+        }
+        .button:hover {
+            color: #fff;
+        }
+        .btn_1::before {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn_1::after {
+            background: #fff;
+            color: black!important;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .btn_1:hover:after {
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .cardBox{height:250px;}
+        }
+        @media only screen and (max-width: 576px) {
+            .card{margin-left: 30%;}
+        }
+        .imgLogo{
+            width: 180px;
+            height: 230px;
+            border-radius: 10%;
+
+        }
+        .imag{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+        }
+        @media only screen and (max-width: 768px) {
+             .body{text-align: center;}
+             .imgLogo{
+                  display: block;
+                 margin-left: auto;
+                 margin-right: auto;
+                 margin-bottom: 30px;
+                 float: none !important;
+             }
+					 }
+	</style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="70">
+	<div id='Header'></div>
+	<script type="text/javascript" src="../include/js/navbar.js"></script>
+	<div class="jumbotron jumbotron-fluid" id="item-top">
+		<div class="container text-center">
+			<h1>2018 暑期高效能運算課程</h1>
+			<p class="lead">High Performance Computing and Big Data</p>
+		</div>
+	</div>
+    <div class="row justify-content-between mx-0 w-100">
+        <div class="container">
+            <div class="title"><strong>師資陣容</strong></div><hr><br>
+            <div class="title">機器學習與最佳化初談</div><br><br><br>
+
+            <img class="imgLogo" style="float: right" src=../include/img/teacher/teacher09.jpg>
+            <p><strong>吳沛遠 Pei-Yuan Wu</strong></p>
+            <p>國立臺灣大學電機工程學系 助理教授</p>
+            <p>Assistant Professor, Department of Electrical Engineering, National Taiwan University</p>
+            <h5>學歷：</h5><p>普林斯頓大學電機工程博士(2015)/國立臺灣大學電機工程學士(2009)</p>
+            <h5>經歷：</h5>
+            <ol>
+                <li>國立台灣大學電機工程學系 助理教授 (2017~迄今)</li>
+                <li>台灣積體電路公司 主任工程師 (2015~2017)</li>
+            </ol>
+            <h5>研究興趣:</h5>
+            <ol>
+                <li><strong>隱私維護機器學習:</strong> 將同態加密、亂碼電路等加密機制加入機器學習演算法，以降低個人隱私資料在機器學習中遭到揭露的風險。</li>
+                <li><strong>核方法:</strong> 提升核方法的運算效率與強健性，以應用於大數據分析。</li>
+                <li><strong>主動識別:</strong> 本研究團隊與普林斯頓大學及愛荷華州立大學合作，透過分析人機互動過程中使用者的生物特徵與行為特徵進行持續性且非干擾性身分識別</li>
+            </ol>
+            <a href="http://www.ee.ntu.edu.tw/profile1?teacher_id=24038&p=3">個人網頁</a>
+
+        </div>
+    </div>
+
+	<div id='Footer'></div>
+	<script type="text/javascript" src="../include/js/footer.js"></script>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="../include/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="../include/js/popper.min.js"></script>
+	<script type="text/javascript" src="../include/js/bootstrap.min.js"></script>
+
+</body>
+</html>

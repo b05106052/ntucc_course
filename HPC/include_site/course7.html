@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="../include/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../include/img/logo.png">
+	<title>NTU HPC</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+
+		body {
+			position: relative;
+            font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+		}
+		.jumbotron-fluid{
+			background-image: url("../include/img/banner.jpg");
+			background-position: center;
+            background-size: cover;
+			color: black;
+		}
+
+		.navbar{
+			background-color: rgba(0,0,0,0.9);
+		}
+		#navbar-example3 .nav-link{
+			color: gray;
+			font-size: 15px;
+		}
+		#navbar-example3 .active{
+			background-color: white!important;
+			color: #18bd97!important;
+		}
+		.title{
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: center
+        }
+        img{
+
+        }
+        .footer{
+            padding-top: 45px;
+            border-top: 1px solid #dfdfdf;
+            background-color: #fafafa;
+        }
+        .footer p{
+            margin: 0;
+            font-size: 15px;
+            color: #7f7f7f
+        }
+        .button,
+        .button::after {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .button {
+            background: none;
+            color: #2ecc71;
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 1em auto;
+            padding: 2em;
+            position: relative;
+        }
+        .button::before,
+        .button::after {
+            background: #2ecc71;
+            content: '';
+            position: absolute;
+            z-index: -1;
+        }
+        .button:hover {
+            color: #fff;
+        }
+        .btn_1::before {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn_1::after {
+            background: #fff;
+            color: black!important;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .btn_1:hover:after {
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+        }
+        .logo{
+            margin-top: 45px;
+            border-radius: 50%
+        }
+        .content{
+            margin-top: 25px;
+            margin-bottom: 40px;
+        }
+        .nav_item{
+            width: 15%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 30px;
+        }
+        .tab-pane{
+            padding-top: 30px
+        }
+
+
+	</style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="70">
+	<div id='Header'></div>
+	<script type="text/javascript" src="../include/js/navbar.js"></script>
+  <div class="jumbotron jumbotron-fluid" id="item-top">
+		<div class="container text-center">
+			<h1>2018 暑期高效能運算課程</h1>
+			<p class="lead">High Performance Computing and Big Data</p>
+		</div>
+	</div>
+
+     <div class="title">TensorFlow人工智慧開發</div><br><hr>
+    <div class="container">
+        <div class="row content" >
+                        <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/BasicInfo.gif">
+                            <h3>基本資訊</h3>
+                        </div>
+
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p>【日期】 2018/7/30(一)，7/31(二)</p>
+                            <p>【時間】  ■09:10~12:00  ■13:20~16:10</p>
+                            <p>【地點】  計中 106 教室（階梯教室）</p>
+                            <p>【費用】 臺灣大學及國立臺灣大學系統 1000 元，其他 2000 元，名額40人</p>
+                            <p>【主辦單位】國立臺灣大學計算機及資訊網路中心（臺大計中）</p>
+                            <p>【協辦單位】<a href="http://www.gpu123.com/">兌全有限公司</a></p>
+                        </div>
+
+    </div><hr>
+
+      <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/professor.gif">
+                            <h3>師資</h3>
+                        </div>
+
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p><strong>兌全有限公司 鄭羽熙 博士</strong></p>
+                            <p>兌全有限公司 總經理</p>
+                            <p>學歷：國立台灣大學 電機系博士 (1992)</p>
+                            <p style="margin-bottom: -2px;">經歷：</p>
+                            <ol>
+                                <li>中山科學研究院簡聘技正</li>
+                                <li>德碩半導體股份有限公司晶片設計經理</li>
+                                <li>麗臺科技股份有限公司副總工程師</li>
+                            </ol>
+                            <p style="margin-bottom: -2px;">專長：</p>
+                            <ol>
+                                <li>Deep learning and Artificial intelligence application</li>
+                                <li>Multi-core parallel processing and GPU massive processing</li>
+                                <li>Video codec and algorithm</li>
+                                <li>Embedded SOC system</li>
+                                <li>FPGA and Chip design</li>
+                                <li>ECG and HRV application</li>
+                            </ol>
+                            <a href="teacher02.html">詳細資料</a>
+                          </div>
+                    </div><hr>
+
+     <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/CourseIntro.gif">
+                            <h3>課程簡介</h3>
+                        </div>
+
+                        <div id="box" class="col-12 col-md-9" style="margin: auto;">
+                            <p>隨著深度學習與人工智慧開發技術的日趨成熟，目前已經有許多資源豐富的平台可供開發者選擇，例如 Google TensorFlow、Berkeley Caffe、NVidia Digits、Keras、Theano、Torch等，其中以Google TensorFlow的使用者居多。TensorFlow可選擇結合Python或C++程式語言環境各別開發；由於Python程式語言提供較高階的應用程式介面（Application Programming Interface），不但可外掛許多開發資源，例如OpenCV影像處理、NumPy/Scipy矩陣科學運算；還有眾多網路上開發者的心得分享可供參考，因此現今已成為大多數開發者的必修課程。</p>
+
+                            <p>為了協助學員能夠實際上手設計人工智慧應用程式，本課程採用Google TensorFlow開發平台，從Python程式設計開始介紹，加上Numpy向量及矩陣等科學運算處理說明、Tensor觀念及使用方法介紹、GPU加速整合、類神經網路運算、CNN、RNN、LSTM等深度學習演算及AlexNet、GoogLeNet等圖像分類個案研究，一直到深度強化學習及生成對抗網路的實現，精心安排使學員能夠迅速上手使用TensorFlow開始設計人工智慧的應用程式。</p>
+
+                            <p>歡迎您來參加這場扎實的開發課程，在最短的時間內，快速瞭解設計人工智慧的方法。</p>
+
+
+
+         </div>
+      </div><hr>
+
+     <div class="row content">
+
+                       <div class="col-12 col-md-3" style="text-align: center">
+                           <img class="logo" src="../include/img/CourseContent.gif">
+                           <h3>課程內容</h3>
+                       </div>
+
+                       <div class="col-12 col-md-9 " style="margin: auto;">
+                           <table class="table table-bordered table-condensed table-responsive-md">
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">第一天</th>
+                                        <th scope="col">第二天</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <ol>
+                                                <li>TensorFlow基本資料型態及主要元件介紹</li>
+                                                <li>Tensor Shape, Rank轉換功能與運算功能介紹</li>
+                                                <li>TensorFlow深度學習訓練與預測程式結構說明</li>
+                                                <li>TensorFlow API與實例探討</li>
+                                                <li>單層與多層類神經網路設計</li>
+                                                <li>TensorFlow CNN</li>
+                                                <li>TensorFlow AlexNet</li>
+                                            </ol>
+                                        </td>
+                                        <td>
+                                            <ol>
+                                                <li>TensorFlow VGGNet</li>
+                                                <li>圖像辨識類神經網路設計</li>
+                                                <li>TensorFlow RNN及LSTM結構說明 </li>
+                                                <li>TensorFlow LSTM實例設計</li>
+                                                <li>TensorFlow TFRecord訓練資料輸入安排</li>
+                                                <li>深度強化學習觀念介紹</li>
+                                                <li>使用TensorFlow實現DQN深度強化學習</li>
+                                                <li>GAN生成對抗觀念介紹</li>
+                                                <li>使用TensorFlow實現GAN生成對抗應用</li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                               </tbody>
+                           </table>
+                       </div>
+         </div><hr>
+
+         <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/Participants.gif">
+                           <h3>對象</h3>
+                        </div>
+
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p>具備基本程式語言設計基礎，未來想從事高階軟體開發工程師、財務分析工程師、電子/電機相關工程師、測試/量測工程師、醫學界研發人員、生物科技研究人員，以及統計/數值分析人員等</p>
+                       </div>
+                   </div><hr>
+
+         <div class="row content">
+                       <div class="col-12 col-md-3" style="text-align: center">
+                            <img class="logo" src="../include/img/remark.gif">
+                           <h3>備註</h3>
+                        </div>
+
+                        <div class="col-12 col-md-9" style="margin: auto;">
+                            <p>1.本課程不供餐，不提供上課證明或證書。</p>
+                            <p>2.如因報名人數過多，本中心得更換教室。請學員務必於上課前三日，上網確認上課地點。</p>
+                       </div>
+                   </div><hr>
+</div>
+
+
+
+
+
+	<div id='Footer'></div>
+	<script type="text/javascript" src="../include/js/footer.js"></script>
+
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="../include/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="../include/js/popper.min.js"></script>
+	<script type="text/javascript" src="../include/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="../include/css/bootstrap.min.css">
+
+    <!--Import materialize.css-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="../include/js/teacher.js"></script>
+    <link rel="shortcut icon" href="../include/img/logo.png">
+	<title>NTU HPC</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+
+		body {
+			position: relative;
+            font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+		}
+		.jumbotron-fluid{
+			background-image: url("../include/img/banner.jpg");
+			background-position: center;
+            background-size: cover;
+			color: black;
+		}
+		.navbar{
+			background-color: rgba(0,0,0,0.9);
+		}
+		.item-title{
+			font-size: 35px;
+			font-weight: 900;
+			text-align: center;
+		}
+		.item-title a{
+			text-decoration: none;
+		}
+		#navbar-example3 .nav-link{
+			color: gray;
+			font-size: 15px;
+		}
+		#navbar-example3 .active{
+			background-color: white!important;
+			color: #18bd97!important;
+		}
+        .title{
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: center
+        }
+
+        .footer{
+            padding-top: 45px;
+            border-top: 1px solid #dfdfdf;
+            background-color: #fafafa;
+        }
+        .footer p{
+            margin: 0;
+            font-size: 15px;
+            color: #7f7f7f
+        }
+        .button,
+        .button::after {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .button {
+            background: none;
+            color: #2ecc71;
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 1em auto;
+            padding: 2em;
+            position: relative;
+        }
+        .button::before,
+        .button::after {
+            background: #2ecc71;
+            content: '';
+            position: absolute;
+            z-index: -1;
+        }
+        .button:hover {
+            color: #fff;
+        }
+        .btn_1::before {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn_1::after {
+            background: #fff;
+            color: black!important;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+        .btn_1:hover:after {
+            height: 0;
+            left: 50%;
+            top: 50%;
+            width: 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .cardBox{height:250px;}
+        }
+        @media only screen and (max-width: 576px) {
+            .card{margin-left: 30%;}
+        }
+        .imgLogo{
+            width: 250px;
+            height: 250px;
+            border-radius: 10%;
+
+        }
+        .responsive {
+            max-width: 100%;
+            height: auto;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+        }
+         @media only screen and (max-width: 768px) {
+             .body{text-align: center;}
+             .imgLogo{
+                  display: block;
+                 margin-left: auto;
+                 margin-right: auto;
+                 margin-bottom: 30px;
+                 float: none !important;
+             }
+        }
+
+	</style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="70">
+	<div id='Header'></div>
+	<script type="text/javascript" src="../include/js/navbar.js"></script>
+	<div class="jumbotron jumbotron-fluid" id="item-top">
+		<div class="container text-center">
+			<h1>2018 暑期高效能運算課程</h1>
+			<p class="lead">High Performance Computing and Big Data</p>
+		</div>
+	</div>
+    <div class="row justify-content-between mx-0 w-100">
+        <div class="container">
+            <div class="title"><strong>師資陣容</strong></div><hr><br>
+            <div class="title">Deep Learning的化學應用(使用TensorFlow)</div><br><br><br>
+
+            <img class="imgLogo" style="float: right" src=../include/img/teacher/teacher01.jpg>
+
+            <h4>侖新科技股份有限公司 執行長 周文祺博士</h4>
+                   <h5>(I)基本資料：</h5>
+                    <p>姓名: 周文祺 (Spike Chou) 性別: 男<br>
+                        現職: 侖新科技股份有限公司 負責人<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        科普飛行隊(Pop.Sci.Flyers) 品牌執行長<br>
+                        最高學歷：淡江大學化學研究所 物理化學 博士<br>
+                        【侖新科技(股)公司 聯絡方式】<br>
+                        網址：<a href="http://www.psflyers.com.tw/">www.psflyers.com.tw</a>，<a href="https://www.facebook.com/psflyers">www.facebook.com/psflyers</a><br><a href="https://www.youtube.com/user/PopSciFlyers">www.youtube.com/user/PopSciFlyers</a>
+                    </p><br><br>
+
+                    <h5>(II)代表經歷:</h5>
+                    <ur>
+                        <li>侖新科技股份有限公司負責人 暨 科普飛行隊(Pop.Sci.Flyers)品牌執行長(2015/2迄今)</li>
+                        <li>綸欣實業股份有限公司(創新科技部) 科普飛行隊(Pop.Sci.Flyers) 產品經理</li>
+                        <li>綸欣實業股份有限公司創新科技部產品暨業務經理</li>
+                        <li>國科會計畫博士後研究員(淡江大學)</li>
+                        <li>綸欣實業股份有限公司科技部高級專員兼研發工程師</li>
+                        <li>原能會核能研究所再生能源計畫材料理論計算兼任研究助理</li>
+                        <li>淡江大學大學部資訊概論、數值方法助教</li>
+                        <li>生物科技公司軟體工程師</li>
+                        <li>國科會計畫案兼任研究助理(淡江大學)</li><br><br>
+                        <li>淡江大學化學系兼任助理教授(化學資訊與雲端，104學年起)</li>
+                        <li>中華高中精進優質計畫課程教學合作(2015~2018)</li>
+                        <li>淡江大學通識教育「自然科學」學門課程委員(103學年)</li>
+                        <li>遠東科技大學(2014)、朝陽科技大學(1015)受邀演講: 行動教學與雲端智慧教室</li>
+                        <li>明志科技大學業界專家(2013~2014)</li>
+                        <li>淡江大學企業導師(2012~2014)、產學合作聯盟運作計畫(2014)</li>
+                        <li>銀色種子「智慧、雲端、生活」課程專職講師</li>
+                        <li>主辦針對大眾的2013科普飛行隊暑期科普講座活動 (http://goo.gl/09UMzq)</li>
+                        <li>主辦針對大眾的2014科普飛行隊3D列印科普實作工作坊活動 (http://goo.gl/qu348M)</li>
+                    </ur><br>
+                    <h5>(III)專長與研究興趣:</h5>
+                    <ur>
+                        <li>觸控、雲端、App科學應用解決方案之產品及服務研發(科普飛行隊主業務)。</li>
+                        <li>3D列印於科學普及教育市場之應用、科學智慧教室產品服務研究與開發。</li>
+                        <li>智慧手機、平板電腦、雲端服務相關科技資訊的實作教學-「智慧、雲端、生活」的主題。</li>
+                        <li>科普雲端服務(Cloud Computing Services for Popular Science)與行動運算App設計與研發。</li>
+                        <li>科學應用嵌入式系統設計與研發。</li>
+                        <li>數值方法與物件導向技術於物理化學及材料之視覺化計算模擬整合平台程式設計。</li>
+                        <li>染料敏化太陽能電池(dye-sensitized solar cell)理論研究與固態材料電子能帶計算研究。</li>
+                        <li>第一原理分子動態模擬(ab initio Molecular Dynamics Simulation)之紅外線振動光譜理論、時間相關函數(time-correlation function)理論、反應動態時頻分析(time-frequency analysis)方法、計算與理論研究。</li>
+                        <li>金屬與半導體材料表面的有機化學反應動態與機制之量子理論計算研究。</li>
+                        <li>高速電腦叢集(PC Cluster)平行化數值運算MPI程式開發與研究。</li>
+                    </ur><br>
+                    <h5>(IV)代表性成果:</h5>
+                    <ur>
+                        <li>科普飛行隊所開發的觸控雲端科學應用平台能夠導入科學相關課程的教學輔助上，讓學生經由視覺刺激與動手操作達到加深基礎原理學習的效果，以下為3D分子結構軟體 搭配 教學塗鴉功能 與 化學物質資料庫搜索實例:</li><br>
+                        <div class="row">
+                            <div class="col-12 col-md-6"><img class="" style="width: 500px;height: 300px;" src=../include/img/a1.png></div>
+                            <div class="col-12 col-md-6"><img class="" style="width: 500px;height: 300px;" src=../include/img/a2.png></div>
+                        </div><br><br><br>
+                        <li>科普飛行隊協助淡大化學系建置智慧教室雲端環境，並完成多項數位實驗互動教學影片於化學系的觸控雲端學習平台，供師生教學使用：</li>
+                        <img class="" style="width: 900px;height: 300px;" src=../include/img/a3.png><br><br>
+                        <img class="" style="width: 900px;height: 300px;" src=../include/img/a4.png>
+                        <br><br><br>
+                        <li>科普飛行隊獨家創新研發的Lecture2Go(智慧教室移動平台)將智慧教室的重要元素通通整合到一部獨家設計的頂級移動推車上，全面提升智慧教學的機動性與支援度，徹底解放暨有教室裡教學設備固定的限制。有了Lecture2Go的支援，不僅一般教室，甚至是校園的川堂都能立刻升級成為智慧互動的演講發表場域，透過Lecture2Go，師生能攜帶自己的智慧手機、平板電腦或筆電，隨時進行一場精采的互動講演或實驗示範，並用豐富的App素材與雲端資源製造一波又一波的驚奇體驗:</li><br>
+                        <img class="" style="width: 900px;height: 450px;" src=../include/img/a5.png><br><br><br>
+                        <li>科普飛行隊投入在3D列印的科學及工程教學教具內容研發，並與高中及大專院校合作，規劃相關系列課程、營隊及教學工作坊，透過行動化的CAD建模教學以及精準尺度的3D結構模型技術分享，協助師生輕鬆進入3D列印的科學應用世界，實現屬於自己的科學創意!</li>
+                        <div class="row">
+                            <div class="col-12 col-md-4"><img class="" style="width: 300px;height: 280px;" src=../include/img/a6.png></div>
+                            <div class="col-12 col-md-4"><img class="" style="width: 300px;height: 280px;" src=../include/img/a7.png></div>
+                            <div class="col-12 col-md-4"><img class="" style="width: 300px;height: 280px;" src=../include/img/a8.png></div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-12 col-md-6"><img class="" style="width: 400px;height: 300px;" src=../include/img/a9.png></div>
+                            <div class="col-12 col-md-6"><img class="" style="width: 400px;height: 300px;" src=../include/img/a10.png></div>
+                        </div><br><br><br>
+                        <li>科普飛行隊結合各項 觸控、雲端、App、3D列印、智慧教室、行動教學等新穎技術，整合發展出各種科學研究應用或教學應用的解決方案，協助科普活動的設計、開發與系統建置，促進創新想法嘗試的實現。例如「全國高中創意化學競賽」、「新北市全民科學日28校同步雲端實驗現場直播大數據分析」等…。</li>
+                        <img class="" style="width: 600px;height: 400px;" src=../include/img/a11.png>
+                        <div class="row">
+                            <div class="col-12 col-md-6"><img class="" style="width: 450px;height: 300px;" src=../include/img/a12.png></div>
+                            <div class="col-12 col-md-6"><img class="" style="width: 450px;height: 300px;" src=../include/img/a13.png></div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-12 col-md-6"><img class="" style="width: 450px;height: 300px;" src=../include/img/a14.png></div>
+                            <div class="col-12 col-md-6"><img class="" style="width: 450px;height: 300px;" src=../include/img/a15.png></div>
+                        </div><br><br><br><br>
+                    </ur>
+                </div>
+            </div>
+
+
+	<div id='Footer'></div>
+	<script type="text/javascript" src="../include/js/footer.js"></script>
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="../include/js/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="../include/js/popper.min.js"></script>
+	<script type="text/javascript" src="../include/js/bootstrap.min.js"></script>
+
+</body>
+</html>
